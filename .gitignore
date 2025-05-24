@@ -23,6 +23,10 @@ node_modules/
 .DS_Store
 Thumbs.db
 
+# Local dist
+dist/
+dist-ssr/
+
 # VSCode
 .vscode/
 
