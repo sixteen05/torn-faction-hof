@@ -101,6 +101,7 @@ function App() {
                 metric={metric.key}
                 stats={top5}
                 icon={metric.icon}
+                label={metric.label}
               />
               <MetricChart
                 metric={metric.key}

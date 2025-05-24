@@ -39,10 +39,6 @@ __pycache__/
 # Misc
 *.log
 
-# Local data
-public/faction-member-hof-dump.json
-public/faction-member-hof-dump - backup.json
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

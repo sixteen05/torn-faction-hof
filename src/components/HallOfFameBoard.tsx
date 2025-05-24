@@ -9,6 +9,7 @@ export interface HallOfFameBoardProps {
     metric: string;
     stats: PlayerStat[];
     icon?: React.ReactNode;
+    label: string;
 }
 
 const getMedalClass = (rank: number) => {
@@ -25,12 +26,12 @@ const getMedal = (rank: number) => {
     return '';
 };
 
-export const HallOfFameBoard: React.FC<HallOfFameBoardProps> = ({ metric, stats, icon }) => {
+export const HallOfFameBoard: React.FC<HallOfFameBoardProps> = ({ metric, stats, icon, label }) => {
     const sorted = [...stats].sort((a, b) => (b[metric] as number) - (a[metric] as number));
     const top5 = sorted.slice(0, 5);
     return (
         <div className="hof-board">
-            <h2>{icon} {metric.charAt(0).toUpperCase() + metric.slice(1)} Hall of Fame</h2>
+            <h2>{icon} {label} HOF</h2>
             <ol>
                 {top5.map((player, idx) => (
                     <li key={player.name} className={getMedalClass(idx)}>
