@@ -66,11 +66,11 @@ export const MetricChart: React.FC<MetricChartProps> = ({ metric, allDays, topPl
                         // Format X axis labels as dd/MM
                         ticks: {
                             color: '#fff',
-                            callback: function (value, index, ticks) {
+                            callback: function (value) {
                                 // value is the label (date string)
                                 const label = this.getLabelForValue(value as number);
                                 if (!label) return '';
-                                const [year, month, day] = label.split('-');
+                                const [_, month, day] = label.split('-');
                                 return `${day}/${month}`;
                             }
                         },
