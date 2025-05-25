@@ -1,0 +1,41 @@
+name: Build and Deploy to docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-move:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Remove old docs folder
+        run: rm -rf docs
+
+      - name: Move dist to docs
+        run: mv dist docs
+
+      - name: Add .nojekyll file
+        run: touch docs/.nojekyll
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs
+          git commit -m "ci: update docs with latest build [skip ci]" || echo "No changes to commit"
+          git push
