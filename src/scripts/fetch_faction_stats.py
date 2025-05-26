@@ -51,13 +51,32 @@ def fetch_faction_members():
     print(f"Fetched {len(members)} faction members.")
     return members
 
-def fetch_player_stats(player_id, from_timestamp, to_timestamp):
-    url = (
-        f'https://api.torn.com/user/{player_id}?selections=personalstats&key={API_KEY}'
-        f'&from={from_timestamp}&to={to_timestamp}'
-    )
+# List of stat keys to extract from Torn v2 API (see https://www.torn.com/swagger/openapi.json)
+STAT_KEYS = [
+    'organizedcrimes',
+    'alcoholused',
+    'bloodwithdrawn',
+    'jailed',
+    'networth',
+    # Add more stat keys here as needed
+]
+
+# Optional: UI-friendly names for each stat (for dashboard use)
+STAT_LABELS = {
+    'organizedcrimes': 'Organized Crimes',
+    'alcoholused': 'Alcohol Used',
+    'bloodwithdrawn': 'Blood Withdrawn',
+    'jailed': 'Jailed',
+    'networth': 'Networth',
+    # Add more mappings as needed
+}
+
+def fetch_player_stats(player_id, timestamp):
+    stat_param = ','.join(STAT_KEYS)
+    url = f'https://api.torn.com/v2/user/{player_id}/personalstats?stat={stat_param}&timestamp={timestamp}'
+    headers = {'Authorization': f'ApiKey {API_KEY}'}
     while True:
-        res = requests.get(url)
+        res = requests.get(url, headers=headers)
         if not res.ok:
             raise Exception(f'Failed to fetch stats for player {player_id}')
         player_json = res.json()
@@ -71,19 +90,9 @@ def fetch_player_stats(player_id, from_timestamp, to_timestamp):
         return player_json
 
 def extract_stats(player):
-    # Use new fields as per user instructions
-    organised_crimes = player.get('personalstats', {}).get('organisedcrimes', 0)
-    alcohol_used = player.get('personalstats', {}).get('alcoholused', 0)
-    blood_withdrawn = player.get('personalstats', {}).get('bloodwithdrawn', 0)
-    jail_time = player.get('personalstats', {}).get('jailed', 0)
-    money_smuggled = player.get('personalstats', {}).get('networth', 0)
-    stats = {
-        'organizedCrimes': organised_crimes,
-        'alcoholUsed': alcohol_used,
-        'bloodWithdrawn': blood_withdrawn,
-        'jailed': jail_time,
-        'networth': money_smuggled
-    }
+    stats_list = player.get('personalstats', [])
+    stat_map = {stat['name']: stat.get('value', 0) for stat in stats_list if 'name' in stat}
+    stats = {stat: stat_map.get(stat, 0) for stat in STAT_KEYS}
     return stats
 
 def main():
@@ -96,10 +105,9 @@ def main():
     for date in dates:
         print(f"Processing date: {date.strftime('%Y-%m-%d')}")
         stats = []
-        from_timestamp = int(datetime(date.year, date.month, date.day, 0, 0, 0).timestamp())
-        to_timestamp = int(datetime(date.year, date.month, date.day, 23, 59, 59).timestamp())
+        timestamp = int(datetime(date.year, date.month, date.day, 23, 59, 59).timestamp())
         for member in members:
-            player = fetch_player_stats(member['user_id'], from_timestamp, to_timestamp)
+            player = fetch_player_stats(member['user_id'], timestamp)
             stat = {'name': member['name']}
             stat.update(extract_stats(player))
             stats.append(stat)

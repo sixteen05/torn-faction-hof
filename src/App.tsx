@@ -29,18 +29,18 @@ const sampleData = Array.from({ length: 20 }, (_, i) => {
 }).reverse(); // oldest to newest
 
 const METRICS = [
-  { key: 'organizedCrimes', label: 'Organized Crimes', icon: '🔫' },
-  { key: 'alcoholUsed', label: 'Alcohol Used', icon: '🍺' },
-  { key: 'bloodWithdrawn', label: 'Blood Withdrawn', icon: '🩸' },
+  { key: 'organizedcrimes', label: 'Organized Crimes', icon: '🔫' },
+  { key: 'alcoholused', label: 'Alcohol Used', icon: '🍺' },
+  { key: 'bloodwithdrawn', label: 'Blood Withdrawn', icon: '🩸' },
   { key: 'jailed', label: 'Jailed', icon: '🚔' },
   { key: 'networth', label: 'Total Networth', icon: '💰' },
 ];
 
 function AggregatedStatsBar({ stats }: { stats: PlayerStat[] }) {
   const metrics = [
-    { key: 'organizedCrimes', label: 'Organized Crimes', icon: '🔫' },
-    { key: 'alcoholUsed', label: 'Alcohol Used', icon: '🍺' },
-    { key: 'bloodWithdrawn', label: 'Blood Withdrawn', icon: '🩸' },
+    { key: 'organizedcrimes', label: 'Organized Crimes', icon: '🔫' },
+    { key: 'alcoholused', label: 'Alcohol Used', icon: '🍺' },
+    { key: 'bloodwithdrawn', label: 'Blood Withdrawn', icon: '🩸' },
     { key: 'jailed', label: 'Jailed', icon: '🚔' },
     { key: 'networth', label: 'Total Networth', icon: '💰' },
   ];
@@ -61,27 +61,46 @@ function AggregatedStatsBar({ stats }: { stats: PlayerStat[] }) {
   );
 }
 
+function getGrowthStats(startStats: PlayerStat[], endStats: PlayerStat[]): PlayerStat[] {
+  // Map by player name for quick lookup
+  const startMap = Object.fromEntries(startStats.map(p => [p.name, p]));
+  return endStats.map(player => {
+    const start = startMap[player.name] || {};
+    // Calculate growth for each metric
+    const growth: PlayerStat = { name: player.name };
+    for (const key of Object.keys(player)) {
+      if (key !== 'name' && typeof player[key] === 'number') {
+        const startVal = typeof start[key] === 'number' ? (start[key] as number) : 0;
+        growth[key] = (player[key] as number) - startVal;
+      }
+    }
+    return growth;
+  });
+}
+
 function App() {
   const [latestStats, setLatestStats] = useState<PlayerStat[]>([]);
   const [allDays, setAllDays] = useState<any[]>([]);
+  const [startStats, setStartStats] = useState<PlayerStat[]>([]);
 
   useEffect(() => {
-    console.log('Sample data for comparison:', sampleData);
     fetch('faction-member-hof-dump.json')
       .then(res => res.json())
       .then(data => {
-        console.log('Loaded data from file:', data);
         setAllDays(data);
         if (data && data.length > 0) {
-          setLatestStats(data[data.length - 1].stats);
+          setStartStats(data[0].stats || []);
+          setLatestStats(data[data.length - 1].stats || []);
         }
       })
-      .catch(err => {
-        console.error('Failed to load faction-member-hof-dump.json, falling back to sampleData', err);
+      .catch(() => {
         setAllDays(sampleData);
+        setStartStats(sampleData[0].stats);
         setLatestStats(sampleData[sampleData.length - 1].stats);
       });
   }, []);
+
+  const growthStats = getGrowthStats(startStats, latestStats);
 
   return (
     <div className="dashboard crime-theme">
@@ -89,11 +108,11 @@ function App() {
         <h1>🕵️ Torn Hall of Fame 🏆</h1>
         <div className="dashboard-subtitle">Church of night</div>
       </header>
-      <AggregatedStatsBar stats={latestStats} />
+      <AggregatedStatsBar stats={growthStats} />
       <div className="metrics-container">
         {METRICS.map((metric) => {
-          // Sort and get top 5 for Hall of Fame
-          const sorted = [...latestStats].sort((a, b) => (b[metric.key] as number) - (a[metric.key] as number));
+          // Sort and get top 5 for Hall of Fame based on growth
+          const sorted = [...growthStats].sort((a, b) => (b[metric.key] as number) - (a[metric.key] as number));
           const top5 = sorted.slice(0, 5);
           return (
             <div className="metric-section" key={metric.key}>
