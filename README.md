@@ -1,5 +1,7 @@
 # Torn Hall of Fame Dashboard
 
+ > Also available on [calm-flower-097abe100.2.azurestaticapps.net](https://calm-flower-097abe100.2.azurestaticapps.net)
+
 A professional, crime-themed, and dorky dashboard for Torn game stats. Renders a Hall of Fame for your friends using daily JSON stat dumps from a public GitHub repo.
 
 ## Features
