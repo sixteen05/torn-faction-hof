@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import './App.css';
-import type { PlayerStat } from './components/HallOfFameBoard';
-import { HallOfFameBoard } from './components/HallOfFameBoard';
-import { MetricChart } from './components/MetricChart';
+import '../../styles/App.css';
+import type { PlayerStat } from './HallOfFameBoard';
+import { HallOfFameBoard } from './HallOfFameBoard';
+import { MetricChart } from './MetricChart';
 
 // Generate 10 players
 const playerNames = [

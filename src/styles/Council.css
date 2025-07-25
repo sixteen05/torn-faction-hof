@@ -1,0 +1,17 @@
+/* Council page professional/clean look, no shared styles */
+.council-layout {
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+
+.council-nav {
+    border-right: 1px solid #dee2e6;
+    background: #fff;
+}
+
+.council-main {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    margin: 32px 0 32px 32px;
+}
