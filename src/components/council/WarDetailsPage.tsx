@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { DEFAULT_NON_WAR_PAY, DEFAULT_WAR_PAY, getPay } from "./CouncilUtil";
@@ -6,11 +6,34 @@ import type { WarMemberAggregate, WarPayFormValues } from "./Models";
 import WarDetailsTable from "./WarDetailsTable";
 import WarPayForm from "./WarPayForm";
 
-const sampleWarAggregateData: WarMemberAggregate[] = [
-  { id: 1, name: "Alice", warHits: 12, nonWarHits: 5, incomingWarHits: 2, incomingNonWarHits: 1, xanaxUsed: 3, pointsUsed: 30 },
-  { id: 2, name: "Bob", warHits: 8, nonWarHits: 7, incomingWarHits: 1, incomingNonWarHits: 1, xanaxUsed: 3, pointsUsed: 0 },
-  { id: 3, name: "Charlie", warHits: 15, nonWarHits: 2, incomingWarHits: 1, incomingNonWarHits: 0, xanaxUsed: 1, pointsUsed: 0 },
-];
+
+// Data provider to fetch war details from attacks.json
+async function fetchWarDetails(warId: string | number): Promise<WarMemberAggregate[]> {
+  // For now, always use attacks.json for warId 1
+  const response = await fetch('/src/assets/attacks.json');
+  const data = await response.json();
+  return Object.entries(data).map(([name, stats], idx) => {
+    const s = stats as {
+      attacks: { war: Record<string, number>; 'non-war': Record<string, number> };
+      defends: { war: Record<string, number>; 'non-war': Record<string, number> };
+    };
+    const warHits = Object.values(s.attacks?.war ?? {}).reduce((a: number, b: number) => a + b, 0);
+    const nonWarHits = Object.values(s.attacks?.['non-war'] ?? {}).reduce((a: number, b: number) => a + b, 0);
+    const incomingWarHits = Object.values(s.defends?.war ?? {}).reduce((a: number, b: number) => a + b, 0);
+    const incomingNonWarHits = Object.values(s.defends?.['non-war'] ?? {}).reduce((a: number, b: number) => a + b, 0);
+    return {
+      id: idx + 1,
+      name,
+      warHits,
+      nonWarHits,
+      incomingWarHits,
+      incomingNonWarHits,
+      xanaxUsed: 0,
+      pointsUsed: 0,
+    } as WarMemberAggregate;
+  });
+}
+
 
 const WarDetailsPage: React.FC = () => {
   const { id } = useParams<{ id?: string }>();
@@ -21,6 +44,12 @@ const WarDetailsPage: React.FC = () => {
     nonWarIncomingDeduction: 0,
     showAdvanced: false,
   });
+  const [warAggregates, setWarAggregates] = useState<WarMemberAggregate[]>([]);
+
+  useEffect(() => {
+    // For now, always fetch war id 1 from attacks.json
+    fetchWarDetails(id ?? 1).then(setWarAggregates);
+  }, [id]);
 
   return (
     <div>
@@ -30,14 +59,14 @@ const WarDetailsPage: React.FC = () => {
           <WarPayForm
             initialValues={formValues}
             onChange={setFormValues}
-            estimatedPay={sampleWarAggregateData.reduce((sum, m) => sum + getPay(m, formValues).pay, 0)}
+            estimatedPay={warAggregates.reduce((sum, m) => sum + getPay(m, formValues).pay, 0)}
           />
         </Card.Body>
       </Card>
       <Card className="mb-4 shadow-lg border-secondary border-2 rounded-4">
         <Card.Body className="p-0">
           <WarDetailsTable
-            warAggregates={sampleWarAggregateData}
+            warAggregates={warAggregates}
             formValues={formValues}
           />
         </Card.Body>
