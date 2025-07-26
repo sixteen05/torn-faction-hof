@@ -1,5 +1,7 @@
 # Torn Hall of Fame Dashboard
 
+ > Also available on [sixteen05.github.io/torn-faction-hof](https://sixteen05.github.io/torn-faction-hof/)
+
 A professional, crime-themed, and dorky dashboard for Torn game stats. Renders a Hall of Fame for your friends using daily JSON stat dumps from a public GitHub repo.
 
 ## Features
