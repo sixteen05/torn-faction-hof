@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { DEFAULT_NON_WAR_INCOMING_DEDUCTION, DEFAULT_NON_WAR_PAY, DEFAULT_WAR_INCOMING_DEDUCTION, DEFAULT_WAR_PAY } from "./CouncilUtil";
-import type { WarPayFormValues } from "./Models";
+import { DEFAULT_NON_WAR_INCOMING_DEDUCTION, DEFAULT_NON_WAR_PAY, DEFAULT_WAR_INCOMING_DEDUCTION, DEFAULT_WAR_PAY } from "../CouncilUtil";
+import type { WarPayFormValues } from "../Models";
 
 interface WarPayFormProps {
   initialValues?: Partial<WarPayFormValues>;
@@ -15,6 +15,17 @@ const WarPayForm: React.FC<WarPayFormProps> = ({ initialValues, onChange, estima
   const [warIncomingDeduction, setWarIncomingDeduction] = useState(initialValues?.warIncomingDeduction ?? DEFAULT_WAR_INCOMING_DEDUCTION);
   const [nonWarIncomingDeduction, setNonWarIncomingDeduction] = useState(initialValues?.nonWarIncomingDeduction ?? DEFAULT_NON_WAR_INCOMING_DEDUCTION);
   const [showAdvanced, setShowAdvanced] = useState(initialValues?.showAdvanced ?? false);
+  const [flash, setFlash] = useState(false);
+  const prevPayRef = React.useRef(estimatedPay);
+
+  React.useEffect(() => {
+    if (prevPayRef.current !== estimatedPay) {
+      setFlash(true);
+      const timeout = setTimeout(() => setFlash(false), 1200);
+      prevPayRef.current = estimatedPay;
+      return () => clearTimeout(timeout);
+    }
+  }, [estimatedPay]);
 
   // Notify parent on any change
   useEffect(() => {
@@ -24,10 +35,8 @@ const WarPayForm: React.FC<WarPayFormProps> = ({ initialValues, onChange, estima
   const toggleAdvanced = () => {
     if (showAdvanced) {
       setShowAdvanced(false);
-      setTimeout(() => {
-        setWarIncomingDeduction(0);
-        setNonWarIncomingDeduction(0);
-      }, 600);
+      setWarIncomingDeduction(0);
+      setNonWarIncomingDeduction(0);
     } else {
       setShowAdvanced(true);
       setWarIncomingDeduction(DEFAULT_WAR_INCOMING_DEDUCTION);
@@ -36,7 +45,7 @@ const WarPayForm: React.FC<WarPayFormProps> = ({ initialValues, onChange, estima
   };
 
   return (
-    <Form className="mb-3">
+    <Form className="mb-2">
       <div className="d-flex gap-3 align-items-end flex-wrap justify-content-between">
         <div className="d-flex gap-3 align-items-end flex-wrap">
           <Form.Group>
@@ -64,8 +73,11 @@ const WarPayForm: React.FC<WarPayFormProps> = ({ initialValues, onChange, estima
           </Button>
         </div>
         <div className="ms-auto text-end">
-          <div className="fs-4 fw-bold text-success-emphasis">
-            Estimated Pay: {estimatedPay.toLocaleString()}
+          <div className="fw-bold text-success-emphasis user-select-none">
+            Estimated Pay:&nbsp;
+            <span className={`estimated-pay-flash px-1 user-select-all ${flash ? 'flash' : ''}`}>
+              {estimatedPay.toLocaleString()}
+            </span>
           </div>
         </div>
       </div>
@@ -80,7 +92,7 @@ const WarPayForm: React.FC<WarPayFormProps> = ({ initialValues, onChange, estima
       >
         <div className="mt-5">
           <Form.Group className="mb-3">
-            <Form.Label>War Incoming Hits Deduction (apply to any hits that result in Leave, Hospitalization or Mug)</Form.Label>
+            <Form.Label>War Incoming Hits Deduction (applies to any hits that result in Leave, Hospitalization or Mug)</Form.Label>
             <Form.Control
               type="number"
               value={warIncomingDeduction}
@@ -89,7 +101,7 @@ const WarPayForm: React.FC<WarPayFormProps> = ({ initialValues, onChange, estima
             />
           </Form.Group>
           <Form.Group className="mb-3">
-            <Form.Label>Non-War Incoming Deduction (only apply to Hospitalizations)</Form.Label>
+            <Form.Label>Non-War Incoming Deduction (only applies to Hospitalizations)</Form.Label>
             <Form.Control
               type="number"
               value={nonWarIncomingDeduction}

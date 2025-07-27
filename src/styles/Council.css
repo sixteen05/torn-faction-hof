@@ -1,17 +1,67 @@
 /* Council page professional/clean look, no shared styles */
+
 .council-layout {
-    background: #f8f9fa;
-    min-height: 100vh;
+  padding-bottom: 70px;
 }
 
 .council-nav {
-    border-right: 1px solid #dee2e6;
-    background: #fff;
+  min-width: 200px;
 }
 
-.council-main {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    margin: 32px 0 32px 32px;
+.estimated-pay-flash {
+  transition: background 0.5s, color 0.5s ease;
+  border-radius: 4px;
+}
+
+.estimated-pay-flash.flash {
+  background: #ffe066;
+  color: #222;
+}
+
+.council-footer {
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.council-footer.hidden {
+  transform: translateY(100%);
+}
+
+.council-footer .close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.council-footer .close-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.council-footer .text-info {
+  color: #17a2b8 !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.council-footer .text-info:hover {
+  color: #20c0e0 !important;
+  text-decoration: underline;
 }
