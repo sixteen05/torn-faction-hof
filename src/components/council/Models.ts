@@ -1,4 +1,25 @@
 
+export interface WarReportFile {
+  [userId: string]: WarReportFileMember;
+}
+
+export interface WarReportFileMember {
+  userId: string;
+  userTag: string;
+  attacks: WarReportFileAttackSummary;
+  defends: WarReportFileAttackSummary;
+  armory?: WarReportFileArmory;
+}
+
+export interface WarReportFileAttackSummary {
+  war: AttackBreakdown;
+  'non-war': AttackBreakdown;
+}
+
+export interface WarReportFileArmory {
+  [item: string]: number;
+}
+
 export interface AttackBreakdown {
   attacked?: number;
   hospitalized?: number;

@@ -1,0 +1,23 @@
+{
+  "generatedAtIST": "2025-07-28 18:19:31 IST",
+  "data": [
+    {
+      "enemyFactionId": "8944",
+      "enemyFactionName": "Ambulance Chasers",
+      "armoryOpenTs": 1748174476,
+      "warDeclaredTs": 1748347276,
+      "warStartTs": 1748552410,
+      "warEndTs": 1748758865,
+      "rankedWarId": "26134"
+    },
+    {
+      "enemyFactionId": "48927",
+      "enemyFactionName": "Bunnies on Meth",
+      "armoryOpenTs": 1752408075,
+      "warDeclaredTs": 1752580875,
+      "warStartTs": 1752775207,
+      "warEndTs": 1752887021,
+      "rankedWarId": "28150"
+    }
+  ]
+}

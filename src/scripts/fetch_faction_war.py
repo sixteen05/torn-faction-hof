@@ -1,17 +1,20 @@
 import os
 from dotenv import load_dotenv
+import re
 import requests
 import time
 import json
 import base64
 from typing import Dict, Any, List
+from datetime import datetime, timedelta, timezone
+import pytz
 
 load_dotenv()
 API_BASE = "https://api.torn.com"
 KEY = os.getenv("TORN_FACTION_API_KEY", "<YOUR_TORN_API_KEY>")
 CON_FACTION_ID = 48622
 PAGE_SIZE = 1000
-ASSETS_DIR = "src/assets/"
+ASSETS_DIR = "public/"
 ARMORY_FILE_NAME = "armoryNews.json"
 ATTACKS_FILE_NAME = "attacks.json"
 
@@ -40,6 +43,16 @@ def make_api_call(relative_url: str) -> Any:
         return data
 
 def save_json_file(content, file_name):
+    # Add IST datetime to content
+    ist = pytz.timezone('Asia/Kolkata')
+    now_utc = datetime.now(timezone.utc)
+    now_ist = now_utc.astimezone(ist)
+    ist_str = now_ist.strftime('%Y-%m-%d %H:%M:%S IST')
+    if isinstance(content, dict):
+        content["generatedAtIST"] = ist_str
+    elif isinstance(content, list):
+        # For list, add as a top-level dict
+        content = {"generatedAtIST": ist_str, "data": content}
     with open(ASSETS_DIR + file_name, "w", encoding="utf-8") as f:
         json.dump(content, f, indent=2)
 
@@ -89,6 +102,22 @@ def fetch_armory_news(from_ts: str, to_ts: str) -> list:
     print(f"Total armory news fetched: {len(news)}")
     return news
 
+def fetch_ranked_war_news(from_ts: str) -> list:
+    news = []
+    next_from = from_ts
+    while True:
+        print(f"Fetching ranked war news from {next_from}")
+        r = make_api_call(f"/v2/faction/news?striptags=false&limit=100&sort=ASC&from={next_from}&cat=rankedWar&key={KEY}")
+        page_news = r.get("news", [])
+        print(f"Fetched {len(page_news)} war news")
+        news.extend(page_news)
+        if page_news:
+            next_from = str(int(page_news[-1]["timestamp"]) + 1)
+        else:
+            break
+    print(f"Total ranked war news fetched: {len(news)}")
+    return news
+
 
 # --- Data Processing ---
 def parse_attack(each_attack, target_faction_id, member_tag_map):
@@ -129,9 +158,50 @@ def parse_attack(each_attack, target_faction_id, member_tag_map):
         "result": result,
     }
 
+def get_enemy_faction_details(war_news):
+    regex = re.compile(r'profile&ID=(\d*)')
+    matches = regex.findall(war_news.get("text", ""))
+    if not matches:
+        return {"enemyFactionId": None, "enemyFactionName": None}
+    if matches[0] == str(CON_FACTION_ID) and len(matches) > 1:
+        enemy_id = matches[1]
+        name = get_enemy_faction_name(war_news, 1)
+    else:
+        enemy_id = matches[0]
+        name = get_enemy_faction_name(war_news, 0)
+    return {"enemyFactionId": enemy_id, "enemyFactionName": name}
+
+def get_enemy_faction_name(war_news, at_index):
+    regex = re.compile(r'<a[^>]*>([^<]*)</a>')
+    matches = regex.findall(war_news.get("text", ""))
+    if not matches:
+        return None
+    if at_index < len(matches):
+        return matches[at_index]
+    return None
+
+def is_war_announced_news(war_news):
+    return "will begin in" in war_news.get("text", "")
+
+def is_war_started_news(war_news):
+    return "has begun" in war_news.get("text", "")
+
+def is_war_end_news(war_news):
+    txt = war_news.get("text", "")
+    return "defeated" in txt and "in a ranked war" in txt
+
+def get_ranked_war_id(war_news):
+    match = re.search(r'&rankID=(\d*)', war_news.get("text", ""))
+    if match:
+        return match.group(1)
+    return None
+
+def get_armory_open_ts(war_news):
+    # 2 days before war declared
+    return war_news["timestamp"] - 2 * 24 * 60 * 60
+
 def parse_item_use(each_news):
     # Extract user id and name from HTML
-    import re
     match = re.search(r'XID=(\d+)">([^<]+)</a>', each_news.get("text", ""))
     if not match:
         return None, None, None
@@ -171,7 +241,7 @@ def fetch_and_parse_attacks(from_ts, to_ts, target_faction_id, aggregated_counts
     print(f"Total members in output: {len(aggregated_counts)}")
     return aggregated_counts
 
-def fetch_and_parse_news(from_ts, to_ts, filter_condition, aggregated_counts=None, member_tag_map=None):
+def fetch_and_parse_armory(from_ts, to_ts, filter_condition, aggregated_counts=None, member_tag_map=None):
     if member_tag_map is None:
         member_tag_map, _ = fetch_faction_members()
     news = fetch_armory_news(from_ts, to_ts)
@@ -196,22 +266,60 @@ def fetch_and_parse_news(from_ts, to_ts, filter_condition, aggregated_counts=Non
     print(f"Total members in output: {len(aggregated_counts)}")
     return aggregated_counts
 
-def fetch_and_parse_all(from_ts, to_ts, target_faction_id, filter_condition):
+def fetch_and_parse_war_news(from_ts):
+    war_news = fetch_ranked_war_news(from_ts)
+    wars = []
+    for each_war_update in war_news:
+        prev_war_details = wars[-1] if wars else None
+        if is_war_announced_news(each_war_update):
+            details = get_enemy_faction_details(each_war_update)
+            wars.append({
+                **details,
+                "armoryOpenTs": get_armory_open_ts(each_war_update),
+                "warDeclaredTs": each_war_update["timestamp"]
+            })
+        elif is_war_started_news(each_war_update) and prev_war_details:
+            prev_war_details["warStartTs"] = each_war_update["timestamp"]
+        elif is_war_end_news(each_war_update) and prev_war_details:
+            prev_war_details["warEndTs"] = each_war_update["timestamp"]
+            prev_war_details["rankedWarId"] = get_ranked_war_id(each_war_update)
+    print(f"Wars: {json.dumps(wars, indent=2)[:50]}...")
+    save_json_file(wars, "wars.json")
+    print(f"Saved wars.json in {ASSETS_DIR}")
+    return wars
+
+def fetch_and_parse_all(from_ts, filter_condition):
     member_tag_map, _ = fetch_faction_members()
-    aggregated_counts = {}
-    aggregated_counts = fetch_and_parse_attacks(from_ts, to_ts, target_faction_id, aggregated_counts, member_tag_map)
-    aggregated_counts = fetch_and_parse_news(from_ts, to_ts, filter_condition, aggregated_counts, member_tag_map)
-    file_name = f"war-report-{target_faction_id}.json"
-    save_json_file(aggregated_counts, file_name)
-    print(f"Saved {file_name} in {ASSETS_DIR}")
+    wars = fetch_and_parse_war_news(from_ts)
+    # wars.json is already saved by fetch_and_parse_war_news
+    for war in wars:
+        war_start = war.get("warStartTs")
+        war_end = war.get("warEndTs")
+        armory_open = war.get("armoryOpenTs")
+        enemy_faction_id = war.get("enemyFactionId")
+        ranked_war_id = war.get("rankedWarId")
+        if not (war_start and war_end and armory_open and enemy_faction_id and ranked_war_id):
+            print(f"Skipping incomplete war: {war}")
+            continue
+        print(f"Processing war: {enemy_faction_id} {war_start} - {war_end} (rankedWarId={ranked_war_id})")
+        # Attacks: war_start to war_end
+        attack_counts = fetch_and_parse_attacks(str(war_start), str(war_end), int(enemy_faction_id), {}, member_tag_map)
+        # Armory: armory_open to war_end
+        armory_counts = fetch_and_parse_armory(str(armory_open), str(war_end), filter_condition, {}, member_tag_map)
+        file_name = f"war-report-{ranked_war_id}.json"
+        save_json_file({
+            "attackCounts": attack_counts,
+            "armoryCounts": armory_counts,
+            "warStartTs": war_start,
+            "warEndTs": war_end,
+            "armoryOpenTs": armory_open,
+            "rankedWarId": ranked_war_id,
+        }, file_name)
+        print(f"Saved {file_name} in {ASSETS_DIR}")
 
 
 # --- Example Usage ---
 if __name__ == "__main__":
-    # Dummy timestamps
-    from_ts = "1752775200"
-    to_ts = "1752886980"
-    target_faction_id = 48927
-
+    from_ts = "1745838001" # Example: 2024-04-01 00:00:01 UTC
     filter_condition = lambda item: ("Xanax" in item or "point" in item) and ("for their role as" not in item)
-    fetch_and_parse_all(from_ts, to_ts, target_faction_id, filter_condition)
+    fetch_and_parse_all(from_ts, filter_condition)
