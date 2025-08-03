@@ -1,0 +1,2154 @@
+{
+  "attackCounts": {
+    "2746246": {
+      "userTag": "RHowzy [2746246]",
+      "attacks": {
+        "war": {
+          "attacked": 41,
+          "hospitalized": 9,
+          "interrupted": 2,
+          "lost": 7,
+          "assist": 3,
+          "mugged": 1
+        },
+        "non-war": {
+          "attacked": 19,
+          "lost": 2,
+          "hospitalized": 2
+        }
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 8,
+          "assist": 3,
+          "interrupted": 1
+        },
+        "non-war": {
+          "hospitalized": 9,
+          "assist": 1,
+          "attacked": 4
+        }
+      },
+      "armory": {}
+    },
+    "3686634": {
+      "userTag": "ARRODOX [3686634]",
+      "attacks": {
+        "war": {
+          "attacked": 55,
+          "assist": 4,
+          "lost": 3,
+          "mugged": 1
+        },
+        "non-war": {
+          "attacked": 29,
+          "escape": 1,
+          "hospitalized": 2,
+          "lost": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 1,
+          "assist": 1,
+          "attacked": 1,
+          "interrupted": 1
+        },
+        "non-war": {
+          "attacked": 7,
+          "hospitalized": 6
+        }
+      },
+      "armory": {}
+    },
+    "3633550": {
+      "userTag": "Bellaluna [3633550]",
+      "attacks": {
+        "war": {
+          "assist": 4,
+          "attacked": 40,
+          "hospitalized": 1,
+          "lost": 2
+        },
+        "non-war": {
+          "attacked": 40,
+          "lost": 3
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 1,
+          "hospitalized": 1
+        },
+        "non-war": {
+          "assist": 1,
+          "hospitalized": 1,
+          "attacked": 2,
+          "mugged": 1
+        }
+      },
+      "armory": {}
+    },
+    "2757057": {
+      "userTag": "Illusive_ [2757057]",
+      "attacks": {
+        "war": {
+          "attacked": 20,
+          "lost": 1,
+          "hospitalized": 1,
+          "assist": 2
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {
+          "attacked": 14,
+          "hospitalized": 1,
+          "mugged": 1
+        }
+      },
+      "armory": {}
+    },
+    "3679918": {
+      "userTag": "Jessrule [3679918]",
+      "attacks": {
+        "war": {
+          "hospitalized": 13,
+          "lost": 6,
+          "assist": 4,
+          "attacked": 34
+        },
+        "non-war": {
+          "attacked": 15
+        }
+      },
+      "defends": {
+        "war": {
+          "interrupted": 1
+        },
+        "non-war": {
+          "attacked": 4,
+          "hospitalized": 4,
+          "lost": 1
+        }
+      },
+      "armory": {}
+    },
+    "3766072": {
+      "userTag": "Circekid [3766072]",
+      "attacks": {
+        "war": {
+          "attacked": 52,
+          "hospitalized": 1,
+          "assist": 1,
+          "lost": 3
+        },
+        "non-war": {
+          "attacked": 2,
+          "lost": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 2
+        },
+        "non-war": {
+          "hospitalized": 4,
+          "mugged": 1,
+          "attacked": 1
+        }
+      },
+      "armory": {}
+    },
+    "2299334": {
+      "userTag": "Inkweaver [2299334]",
+      "attacks": {
+        "war": {
+          "interrupted": 2,
+          "attacked": 29,
+          "hospitalized": 8,
+          "lost": 6
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 8,
+          "assist": 1,
+          "attacked": 2
+        },
+        "non-war": {
+          "hospitalized": 3,
+          "attacked": 1
+        }
+      },
+      "armory": {}
+    },
+    "3671051": {
+      "userTag": "pooq [3671051]",
+      "attacks": {
+        "war": {
+          "attacked": 55,
+          "assist": 3,
+          "interrupted": 1,
+          "hospitalized": 1,
+          "lost": 2
+        },
+        "non-war": {
+          "attacked": 21,
+          "lost": 1,
+          "assist": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "lost": 1,
+          "attacked": 2,
+          "assist": 1
+        },
+        "non-war": {
+          "attacked": 7,
+          "hospitalized": 1
+        }
+      },
+      "armory": {}
+    },
+    "3670808": {
+      "userTag": "EdFloats [3670808]",
+      "attacks": {
+        "war": {
+          "attacked": 53,
+          "assist": 6,
+          "lost": 5
+        },
+        "non-war": {
+          "attacked": 3
+        }
+      },
+      "defends": {
+        "war": {
+          "lost": 1
+        },
+        "non-war": {
+          "attacked": 7,
+          "assist": 2,
+          "hospitalized": 7
+        }
+      },
+      "armory": {}
+    },
+    "2348502": {
+      "userTag": "DragonArmy [2348502]",
+      "attacks": {
+        "war": {
+          "hospitalized": 21,
+          "attacked": 93,
+          "lost": 3,
+          "stalemate": 1
+        },
+        "non-war": {
+          "attacked": 2
+        }
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 9,
+          "lost": 3,
+          "stalemate": 1,
+          "assist": 2
+        },
+        "non-war": {
+          "lost": 1,
+          "hospitalized": 1
+        }
+      },
+      "armory": {}
+    },
+    "3760084": {
+      "userTag": "DeNuke [3760084]",
+      "attacks": {
+        "war": {
+          "attacked": 50,
+          "lost": 2,
+          "assist": 4
+        },
+        "non-war": {
+          "mugged": 8
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 1
+        },
+        "non-war": {
+          "attacked": 5,
+          "mugged": 1,
+          "hospitalized": 6
+        }
+      },
+      "armory": {}
+    },
+    "3538936": {
+      "userTag": "red-it [3538936]",
+      "attacks": {
+        "war": {
+          "attacked": 44,
+          "lost": 8,
+          "interrupted": 1,
+          "assist": 4
+        },
+        "non-war": {
+          "attacked": 12
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 3,
+          "assist": 1
+        },
+        "non-war": {
+          "attacked": 8,
+          "hospitalized": 4
+        }
+      },
+      "armory": {}
+    },
+    "2104992": {
+      "userTag": "mialu000 [2104992]",
+      "attacks": {
+        "war": {
+          "attacked": 94,
+          "assist": 2,
+          "interrupted": 1
+        },
+        "non-war": {
+          "escape": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 3,
+          "hospitalized": 4
+        },
+        "non-war": {
+          "attacked": 3,
+          "hospitalized": 10
+        }
+      },
+      "armory": {}
+    },
+    "3646427": {
+      "userTag": "Nebss [3646427]",
+      "attacks": {
+        "war": {
+          "assist": 7,
+          "lost": 4,
+          "escape": 1,
+          "attacked": 33
+        },
+        "non-war": {
+          "attacked": 23
+        }
+      },
+      "defends": {
+        "war": {
+          "lost": 2,
+          "attacked": 3,
+          "hospitalized": 1
+        },
+        "non-war": {
+          "hospitalized": 5,
+          "attacked": 6
+        }
+      },
+      "armory": {}
+    },
+    "3416026": {
+      "userTag": "chicken_marc [3416026]",
+      "attacks": {
+        "war": {
+          "assist": 3,
+          "attacked": 32,
+          "lost": 4
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "attacked": 4,
+          "lost": 1
+        },
+        "non-war": {
+          "attacked": 8,
+          "hospitalized": 3
+        }
+      },
+      "armory": {}
+    },
+    "3646016": {
+      "userTag": "Kurikurikur [3646016]",
+      "attacks": {
+        "war": {
+          "attacked": 28,
+          "hospitalized": 2,
+          "lost": 4,
+          "interrupted": 1,
+          "assist": 1
+        },
+        "non-war": {
+          "attacked": 7
+        }
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 3,
+          "attacked": 3,
+          "lost": 1
+        },
+        "non-war": {
+          "attacked": 9,
+          "hospitalized": 5
+        }
+      },
+      "armory": {}
+    },
+    "2769842": {
+      "userTag": "ChutneyDragon [2769842]",
+      "attacks": {
+        "war": {
+          "attacked": 1
+        },
+        "non-war": {
+          "attacked": 51
+        }
+      },
+      "defends": {
+        "war": {
+          "assist": 2,
+          "attacked": 4,
+          "lost": 1
+        },
+        "non-war": {
+          "attacked": 7,
+          "hospitalized": 4
+        }
+      },
+      "armory": {}
+    },
+    "3816569": {
+      "userTag": "MindSweep009 [3816569]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "lost": 7,
+          "attacked": 7,
+          "assist": 2,
+          "mugged": 1
+        },
+        "non-war": {
+          "attacked": 8,
+          "assist": 4,
+          "hospitalized": 5,
+          "mugged": 1
+        }
+      },
+      "armory": {}
+    },
+    "1707230": {
+      "userTag": "Maquis [1707230]",
+      "attacks": {
+        "war": {
+          "lost": 1,
+          "assist": 1,
+          "attacked": 21
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "attacked": 1,
+          "assist": 1,
+          "hospitalized": 1
+        },
+        "non-war": {
+          "attacked": 3,
+          "hospitalized": 3
+        }
+      },
+      "armory": {}
+    },
+    "3593679": {
+      "userTag": "Shelly_Lovegood [3593679]",
+      "attacks": {
+        "war": {
+          "attacked": 3
+        },
+        "non-war": {
+          "attacked": 2,
+          "timeout": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "assist": 1,
+          "attacked": 1,
+          "interrupted": 1,
+          "lost": 1
+        },
+        "non-war": {
+          "hospitalized": 3,
+          "attacked": 3
+        }
+      },
+      "armory": {}
+    },
+    "3475018": {
+      "userTag": "75cent [3475018]",
+      "attacks": {
+        "war": {
+          "attacked": 3
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "lost": 1,
+          "attacked": 4,
+          "hospitalized": 1
+        },
+        "non-war": {
+          "attacked": 4,
+          "hospitalized": 2,
+          "mugged": 1
+        }
+      },
+      "armory": {}
+    },
+    "3605360": {
+      "userTag": "FatherFesto [3605360]",
+      "attacks": {
+        "war": {
+          "hospitalized": 1,
+          "lost": 6,
+          "attacked": 36,
+          "assist": 1
+        },
+        "non-war": {
+          "attacked": 10,
+          "mugged": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 2,
+          "attacked": 2
+        },
+        "non-war": {
+          "attacked": 2,
+          "hospitalized": 3,
+          "lost": 2,
+          "mugged": 1
+        }
+      },
+      "armory": {}
+    },
+    "3535655": {
+      "userTag": "Calinden [3535655]",
+      "attacks": {
+        "war": {
+          "attacked": 45,
+          "lost": 6,
+          "assist": 1
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 1
+        },
+        "non-war": {
+          "hospitalized": 2,
+          "attacked": 2
+        }
+      },
+      "armory": {}
+    },
+    "2171952": {
+      "userTag": "Fluffyfrog [2171952]",
+      "attacks": {
+        "war": {
+          "attacked": 57,
+          "lost": 2,
+          "assist": 1
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "assist": 3,
+          "attacked": 3,
+          "lost": 3
+        },
+        "non-war": {
+          "attacked": 16,
+          "hospitalized": 3
+        }
+      },
+      "armory": {}
+    },
+    "2005014": {
+      "userTag": "Fitzs35 [2005014]",
+      "attacks": {
+        "war": {
+          "attacked": 51
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 1,
+          "attacked": 2,
+          "lost": 1
+        },
+        "non-war": {
+          "hospitalized": 3,
+          "attacked": 5
+        }
+      },
+      "armory": {}
+    },
+    "2223480": {
+      "userTag": "HadesGodz [2223480]",
+      "attacks": {
+        "war": {
+          "hospitalized": 6,
+          "attacked": 83,
+          "lost": 1,
+          "assist": 2
+        },
+        "non-war": {
+          "assist": 1,
+          "attacked": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "lost": 1,
+          "hospitalized": 4,
+          "assist": 1,
+          "attacked": 1
+        },
+        "non-war": {
+          "attacked": 1,
+          "lost": 2,
+          "hospitalized": 3,
+          "assist": 1
+        }
+      },
+      "armory": {}
+    },
+    "2769914": {
+      "userTag": "BetaTester704 [2769914]",
+      "attacks": {
+        "war": {
+          "attacked": 21,
+          "assist": 1
+        },
+        "non-war": {
+          "attacked": 7,
+          "lost": 1
+        }
+      },
+      "defends": {
+        "war": {},
+        "non-war": {
+          "hospitalized": 2,
+          "attacked": 6,
+          "mugged": 3
+        }
+      },
+      "armory": {}
+    },
+    "2436362": {
+      "userTag": "2436362",
+      "attacks": {
+        "war": {},
+        "non-war": {
+          "lost": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 5
+        },
+        "non-war": {
+          "hospitalized": 3,
+          "assist": 1,
+          "attacked": 6
+        }
+      },
+      "armory": {}
+    },
+    "2885721": {
+      "userTag": "--KRATOS-- [2885721]",
+      "attacks": {
+        "war": {
+          "attacked": 53,
+          "hospitalized": 2,
+          "lost": 3,
+          "assist": 2
+        },
+        "non-war": {
+          "attacked": 2
+        }
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 2,
+          "lost": 2,
+          "attacked": 1
+        },
+        "non-war": {
+          "attacked": 9,
+          "hospitalized": 9
+        }
+      },
+      "armory": {}
+    },
+    "3613075": {
+      "userTag": "crzycr33d [3613075]",
+      "attacks": {
+        "war": {
+          "hospitalized": 4,
+          "assist": 5,
+          "lost": 3,
+          "attacked": 15
+        },
+        "non-war": {
+          "attacked": 20,
+          "lost": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 3,
+          "assist": 1,
+          "hospitalized": 1
+        },
+        "non-war": {
+          "hospitalized": 5,
+          "attacked": 1
+        }
+      },
+      "armory": {}
+    },
+    "3437431": {
+      "userTag": "Vincenty69 [3437431]",
+      "attacks": {
+        "war": {
+          "attacked": 30,
+          "lost": 1
+        },
+        "non-war": {
+          "attacked": 18,
+          "escape": 1,
+          "lost": 5
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 3,
+          "assist": 1
+        },
+        "non-war": {
+          "attacked": 6,
+          "assist": 1,
+          "hospitalized": 2
+        }
+      },
+      "armory": {}
+    },
+    "3559949": {
+      "userTag": "3559949",
+      "attacks": {
+        "war": {
+          "mugged": 1,
+          "attacked": 20
+        },
+        "non-war": {
+          "mugged": 1,
+          "attacked": 3
+        }
+      },
+      "defends": {
+        "war": {
+          "assist": 1,
+          "attacked": 4,
+          "hospitalized": 2
+        },
+        "non-war": {
+          "hospitalized": 3,
+          "attacked": 7
+        }
+      },
+      "armory": {}
+    },
+    "3256680": {
+      "userTag": "WolfYT [3256680]",
+      "attacks": {
+        "war": {
+          "attacked": 1
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "lost": 1,
+          "attacked": 7,
+          "hospitalized": 1,
+          "assist": 1
+        },
+        "non-war": {
+          "attacked": 3,
+          "hospitalized": 2
+        }
+      },
+      "armory": {}
+    },
+    "3582844": {
+      "userTag": "3582844",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {
+          "hospitalized": 1,
+          "mugged": 3
+        }
+      },
+      "armory": {}
+    },
+    "3635443": {
+      "userTag": "ToxicTitanN7 [3635443]",
+      "attacks": {
+        "war": {
+          "assist": 4,
+          "attacked": 36,
+          "mugged": 2
+        },
+        "non-war": {
+          "mugged": 5,
+          "attacked": 3
+        }
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 3,
+          "attacked": 1,
+          "assist": 1,
+          "lost": 1
+        },
+        "non-war": {
+          "hospitalized": 3,
+          "attacked": 3
+        }
+      },
+      "armory": {}
+    },
+    "3638792": {
+      "userTag": "3638792",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "attacked": 4,
+          "assist": 2
+        },
+        "non-war": {
+          "assist": 1,
+          "hospitalized": 3,
+          "attacked": 2,
+          "mugged": 2
+        }
+      },
+      "armory": {}
+    },
+    "1990702": {
+      "userTag": "Ray-Jon [1990702]",
+      "attacks": {
+        "war": {
+          "hospitalized": 14,
+          "lost": 3,
+          "assist": 2,
+          "attacked": 14
+        },
+        "non-war": {
+          "attacked": 31
+        }
+      },
+      "defends": {
+        "war": {
+          "lost": 3,
+          "assist": 2,
+          "attacked": 2
+        },
+        "non-war": {
+          "attacked": 6,
+          "hospitalized": 5,
+          "mugged": 2
+        }
+      },
+      "armory": {}
+    },
+    "2763996": {
+      "userTag": "GOOOON [2763996]",
+      "attacks": {
+        "war": {
+          "attacked": 4
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "lost": 4
+        },
+        "non-war": {
+          "attacked": 11,
+          "hospitalized": 3
+        }
+      },
+      "armory": {}
+    },
+    "3586917": {
+      "userTag": "Jaquisse [3586917]",
+      "attacks": {
+        "war": {},
+        "non-war": {
+          "hospitalized": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 2,
+          "attacked": 6,
+          "lost": 7,
+          "assist": 2
+        },
+        "non-war": {
+          "hospitalized": 3,
+          "attacked": 2,
+          "assist": 1,
+          "mugged": 3,
+          "lost": 1
+        }
+      },
+      "armory": {}
+    },
+    "3575112": {
+      "userTag": "3575112",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "attacked": 4,
+          "hospitalized": 1
+        },
+        "non-war": {
+          "hospitalized": 3,
+          "attacked": 5,
+          "mugged": 1
+        }
+      },
+      "armory": {}
+    },
+    "2838269": {
+      "userTag": "Knightnight1514 [2838269]",
+      "attacks": {
+        "war": {
+          "attacked": 37,
+          "assist": 3,
+          "lost": 1
+        },
+        "non-war": {
+          "attacked": 4,
+          "lost": 2
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 1,
+          "lost": 1
+        },
+        "non-war": {
+          "hospitalized": 2,
+          "attacked": 9
+        }
+      },
+      "armory": {}
+    },
+    "2958000": {
+      "userTag": "2958000",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "attacked": 4,
+          "assist": 1,
+          "lost": 1
+        },
+        "non-war": {
+          "hospitalized": 4,
+          "attacked": 5
+        }
+      },
+      "armory": {}
+    },
+    "2428355": {
+      "userTag": "xDCrix [2428355]",
+      "attacks": {
+        "war": {
+          "attacked": 47,
+          "assist": 3,
+          "interrupted": 1
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "lost": 2,
+          "hospitalized": 1
+        },
+        "non-war": {
+          "attacked": 6,
+          "hospitalized": 7,
+          "lost": 2
+        }
+      },
+      "armory": {}
+    },
+    "2789643": {
+      "userTag": "leoDvine [2789643]",
+      "attacks": {
+        "war": {
+          "hospitalized": 1,
+          "attacked": 4,
+          "lost": 3,
+          "assist": 1
+        },
+        "non-war": {
+          "hospitalized": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "lost": 4,
+          "hospitalized": 1,
+          "attacked": 6
+        },
+        "non-war": {
+          "hospitalized": 4,
+          "attacked": 2,
+          "assist": 1,
+          "lost": 1
+        }
+      },
+      "armory": {}
+    },
+    "3507556": {
+      "userTag": "Missmoon8 [3507556]",
+      "attacks": {
+        "war": {
+          "attacked": 10
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 1,
+          "assist": 1,
+          "attacked": 1,
+          "lost": 2
+        },
+        "non-war": {
+          "lost": 2,
+          "hospitalized": 2,
+          "attacked": 3
+        }
+      },
+      "armory": {}
+    },
+    "2831531": {
+      "userTag": "4ngelic [2831531]",
+      "attacks": {
+        "war": {
+          "attacked": 34,
+          "assist": 1
+        },
+        "non-war": {
+          "attacked": 16
+        }
+      },
+      "defends": {
+        "war": {
+          "lost": 3,
+          "interrupted": 1
+        },
+        "non-war": {
+          "attacked": 9,
+          "hospitalized": 4,
+          "lost": 1
+        }
+      },
+      "armory": {}
+    },
+    "3225155": {
+      "userTag": "3225155",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 1,
+          "attacked": 4,
+          "lost": 2
+        },
+        "non-war": {
+          "hospitalized": 2,
+          "attacked": 9
+        }
+      },
+      "armory": {}
+    },
+    "3433050": {
+      "userTag": "BeezMeech [3433050]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 1,
+          "attacked": 3
+        },
+        "non-war": {
+          "attacked": 4,
+          "mugged": 1,
+          "hospitalized": 2
+        }
+      },
+      "armory": {}
+    },
+    "3635425": {
+      "userTag": "Shasta_McNasty [3635425]",
+      "attacks": {
+        "war": {
+          "attacked": 24,
+          "lost": 2,
+          "assist": 4
+        },
+        "non-war": {
+          "attacked": 48,
+          "lost": 2
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 1
+        },
+        "non-war": {
+          "attacked": 4,
+          "hospitalized": 8
+        }
+      },
+      "armory": {}
+    },
+    "3500001": {
+      "userTag": "uuuuu888uu [3500001]",
+      "attacks": {
+        "war": {
+          "attacked": 2,
+          "lost": 1
+        },
+        "non-war": {
+          "attacked": 2,
+          "mugged": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "assist": 1,
+          "attacked": 4,
+          "lost": 13
+        },
+        "non-war": {
+          "attacked": 12,
+          "lost": 1,
+          "hospitalized": 2,
+          "assist": 1
+        }
+      },
+      "armory": {}
+    },
+    "3783028": {
+      "userTag": "RomeoginRam [3783028]",
+      "attacks": {
+        "war": {
+          "assist": 4,
+          "attacked": 25,
+          "lost": 5
+        },
+        "non-war": {
+          "attacked": 34,
+          "lost": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "lost": 1,
+          "attacked": 1
+        },
+        "non-war": {
+          "hospitalized": 4,
+          "attacked": 3,
+          "mugged": 2
+        }
+      },
+      "armory": {}
+    },
+    "3186581": {
+      "userTag": "-Lemmings- [3186581]",
+      "attacks": {
+        "war": {
+          "attacked": 1
+        },
+        "non-war": {
+          "attacked": 38,
+          "lost": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "interrupted": 1,
+          "lost": 1
+        },
+        "non-war": {
+          "attacked": 7,
+          "hospitalized": 4
+        }
+      },
+      "armory": {}
+    },
+    "3701512": {
+      "userTag": "CrowTheRobot [3701512]",
+      "attacks": {
+        "war": {
+          "attacked": 98,
+          "lost": 13,
+          "assist": 11
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "lost": 2,
+          "hospitalized": 1,
+          "assist": 1
+        },
+        "non-war": {
+          "attacked": 7,
+          "assist": 1,
+          "hospitalized": 7
+        }
+      },
+      "armory": {}
+    },
+    "3647715": {
+      "userTag": "Passportbudd [3647715]",
+      "attacks": {
+        "war": {
+          "mugged": 1,
+          "hospitalized": 1,
+          "lost": 1
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "attacked": 3
+        },
+        "non-war": {
+          "hospitalized": 4,
+          "attacked": 2
+        }
+      },
+      "armory": {}
+    },
+    "3655584": {
+      "userTag": "3655584",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "hospitalized": 1,
+          "lost": 5,
+          "attacked": 1
+        },
+        "non-war": {
+          "hospitalized": 3,
+          "attacked": 1,
+          "mugged": 2
+        }
+      },
+      "armory": {}
+    },
+    "3677604": {
+      "userTag": "Yugoslav45 [3677604]",
+      "attacks": {
+        "war": {
+          "attacked": 25,
+          "hospitalized": 1
+        },
+        "non-war": {
+          "attacked": 26
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 4
+        },
+        "non-war": {
+          "attacked": 3,
+          "hospitalized": 4
+        }
+      },
+      "armory": {}
+    },
+    "2747986": {
+      "userTag": "Maxwellll [2747986]",
+      "attacks": {
+        "war": {
+          "attacked": 5,
+          "assist": 1
+        },
+        "non-war": {
+          "attacked": 61,
+          "lost": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 2
+        },
+        "non-war": {
+          "hospitalized": 6,
+          "attacked": 2
+        }
+      },
+      "armory": {}
+    },
+    "3657653": {
+      "userTag": "OJpun [3657653]",
+      "attacks": {
+        "war": {
+          "lost": 4,
+          "attacked": 76,
+          "assist": 1
+        },
+        "non-war": {
+          "attacked": 19
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 1
+        },
+        "non-war": {
+          "attacked": 3,
+          "hospitalized": 5,
+          "mugged": 2
+        }
+      },
+      "armory": {}
+    },
+    "3258501": {
+      "userTag": "FleshEatingFrog [3258501]",
+      "attacks": {
+        "war": {
+          "lost": 2,
+          "attacked": 3
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "lost": 1,
+          "attacked": 5
+        },
+        "non-war": {
+          "mugged": 2,
+          "attacked": 1
+        }
+      },
+      "armory": {}
+    },
+    "3721360": {
+      "userTag": "3721360",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "attacked": 2,
+          "assist": 1,
+          "lost": 1
+        },
+        "non-war": {
+          "attacked": 2,
+          "assist": 2,
+          "hospitalized": 3,
+          "mugged": 2
+        }
+      },
+      "armory": {}
+    },
+    "3604620": {
+      "userTag": "Buzzkill66 [3604620]",
+      "attacks": {
+        "war": {
+          "interrupted": 1,
+          "attacked": 7
+        },
+        "non-war": {}
+      },
+      "defends": {
+        "war": {
+          "attacked": 6,
+          "lost": 1,
+          "hospitalized": 1
+        },
+        "non-war": {
+          "attacked": 5
+        }
+      },
+      "armory": {}
+    },
+    "3376166": {
+      "userTag": "3376166",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {
+          "mugged": 1,
+          "attacked": 1
+        }
+      },
+      "armory": {}
+    },
+    "3658395": {
+      "userTag": "DonBaker [3658395]",
+      "attacks": {
+        "war": {
+          "attacked": 36,
+          "assist": 4,
+          "lost": 1
+        },
+        "non-war": {
+          "attacked": 36,
+          "escape": 1
+        }
+      },
+      "defends": {
+        "war": {
+          "attacked": 1
+        },
+        "non-war": {
+          "hospitalized": 3,
+          "attacked": 1
+        }
+      },
+      "armory": {}
+    },
+    "3050178": {
+      "userTag": "squidgybum [3050178]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {
+          "mugged": 2,
+          "attacked": 1,
+          "hospitalized": 1
+        }
+      },
+      "armory": {}
+    },
+    "2219053": {
+      "userTag": "Noumosh [2219053]",
+      "attacks": {
+        "war": {
+          "lost": 1,
+          "assist": 1,
+          "attacked": 7
+        },
+        "non-war": {
+          "attacked": 46,
+          "mugged": 1
+        }
+      },
+      "defends": {
+        "war": {},
+        "non-war": {
+          "mugged": 1,
+          "attacked": 1
+        }
+      },
+      "armory": {}
+    }
+  },
+  "armoryCounts": {
+    "2348502": {
+      "userTag": "DragonArmy [2348502]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "gave 3x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=3701512\">CrowTheRobot</a> from the faction armory": 1,
+        "gave 3x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=2299334\">Inkweaver</a> from the faction armory": 1,
+        "gave 3x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=2223480\">HadesGodz</a> from the faction armory": 1,
+        "gave 3x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=3658395\">DonBaker</a> from the faction armory": 1,
+        "gave 3x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=3760084\">DeNuke</a> from the faction armory": 1,
+        "gave 3x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=3646427\">Nebss</a> from the faction armory": 1,
+        "gave 3x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=3671051\">pooq</a> from the faction armory": 1,
+        "gave 3x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=3657653\">OJpun</a> from the faction armory": 1,
+        "gave 3x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=3766072\">Circekid</a> from the faction armory": 1,
+        "gave 3x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=3538936\">red-it</a> from the faction armory": 1,
+        "gave 3x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=3677604\">Yugoslav45</a> from the faction armory": 1,
+        "gave 2x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=1707230\">Maquis</a> from the faction armory": 1,
+        "gave 2x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=2747986\">Maxwellll</a> from the faction armory": 1,
+        "gave 2x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=3605360\">FatherFesto</a> from the faction armory": 1,
+        "gave 2x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=2746246\">RHowzy</a> from the faction armory": 1,
+        "gave 2x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=3535655\">Calinden</a> from the faction armory": 1,
+        "gave 1x Xanax to <a href = \"http://www.torn.com/profiles.php?XID=2219053\">Noumosh</a> from the faction armory": 1
+      }
+    },
+    "3760084": {
+      "userTag": "DeNuke [3760084]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 6,
+        "used 30 of the faction's points to refill their energy": 1
+      }
+    },
+    "3666755": {
+      "userTag": "HewhoHaHa [3666755]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 3
+      }
+    },
+    "2838269": {
+      "userTag": "Knightnight1514 [2838269]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 3,
+        "used 30 of the faction's points to refill their energy": 2
+      }
+    },
+    "3701512": {
+      "userTag": "CrowTheRobot [3701512]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 6,
+        "used 30 of the faction's points to refill their energy": 1
+      }
+    },
+    "2885721": {
+      "userTag": "--KRATOS-- [2885721]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 6
+      }
+    },
+    "3256680": {
+      "userTag": "WolfYT [3256680]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 5
+      }
+    },
+    "3416026": {
+      "userTag": "chicken_marc [3416026]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 5,
+        "used 30 of the faction's points to refill their energy": 1
+      }
+    },
+    "3721360": {
+      "userTag": "kze [3721360]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 3
+      }
+    },
+    "3646427": {
+      "userTag": "Nebss [3646427]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 5
+      }
+    },
+    "3613075": {
+      "userTag": "crzycr33d [3613075]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 5,
+        "used 30 of the faction's points to refill their energy": 1
+      }
+    },
+    "3671051": {
+      "userTag": "pooq [3671051]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 7,
+        "used 30 of the faction's points to refill their energy": 2
+      }
+    },
+    "2958000": {
+      "userTag": "August_third [2958000]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 5
+      }
+    },
+    "3658395": {
+      "userTag": "DonBaker [3658395]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 6,
+        "used 30 of the faction's points to refill their energy": 1
+      }
+    },
+    "2769914": {
+      "userTag": "BetaTester704 [2769914]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 4
+      }
+    },
+    "3437431": {
+      "userTag": "Vincenty69 [3437431]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 7
+      }
+    },
+    "3635425": {
+      "userTag": "Shasta_McNasty [3635425]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 7,
+        "used 30 of the faction's points to refill their energy": 1
+      }
+    },
+    "2104992": {
+      "userTag": "mialu000 [2104992]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 8
+      }
+    },
+    "3605360": {
+      "userTag": "FatherFesto [3605360]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 7
+      }
+    },
+    "2757057": {
+      "userTag": "Illusive_ [2757057]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 4
+      }
+    },
+    "3670808": {
+      "userTag": "EdFloats [3670808]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 6,
+        "used 30 of the faction's points to refill their energy": 1
+      }
+    },
+    "2747986": {
+      "userTag": "Maxwellll [2747986]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 3
+      }
+    },
+    "3783028": {
+      "userTag": "RomeoginRam [3783028]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 6
+      }
+    },
+    "3538936": {
+      "userTag": "red-it [3538936]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 7
+      }
+    },
+    "3635443": {
+      "userTag": "ToxicTitanN7 [3635443]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 5
+      }
+    },
+    "2831531": {
+      "userTag": "4ngelic [2831531]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 6
+      }
+    },
+    "3186581": {
+      "userTag": "-Lemmings- [3186581]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 4
+      }
+    },
+    "3686634": {
+      "userTag": "ARRODOX [3686634]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 7,
+        "used 30 of the faction's points to refill their energy": 2
+      }
+    },
+    "3535655": {
+      "userTag": "Calinden [3535655]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 4
+      }
+    },
+    "3657653": {
+      "userTag": "OJpun [3657653]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 8,
+        "used 30 of the faction's points to refill their energy": 2
+      }
+    },
+    "3766072": {
+      "userTag": "Circekid [3766072]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 5,
+        "used 30 of the faction's points to refill their energy": 1
+      }
+    },
+    "1707230": {
+      "userTag": "Maquis [1707230]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 4
+      }
+    },
+    "3679918": {
+      "userTag": "Jessrule [3679918]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 3
+      }
+    },
+    "3646016": {
+      "userTag": "Kurikurikur [3646016]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 4,
+        "used 30 of the faction's points to refill their energy": 1
+      }
+    },
+    "3604620": {
+      "userTag": "Buzzkill66 [3604620]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 3
+      }
+    },
+    "3677604": {
+      "userTag": "Yugoslav45 [3677604]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 3
+      }
+    },
+    "2789643": {
+      "userTag": "leoDvine [2789643]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 1
+      }
+    },
+    "2746246": {
+      "userTag": "RHowzy [2746246]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 3,
+        "used 30 of the faction's points to refill their energy": 1
+      }
+    },
+    "3593679": {
+      "userTag": "Shelly_Lovegood [3593679]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 2
+      }
+    },
+    "2428355": {
+      "userTag": "xDCrix [2428355]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 2
+      }
+    },
+    "2763996": {
+      "userTag": "GOOOON [2763996]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 1
+      }
+    },
+    "1990702": {
+      "userTag": "Ray-Jon [1990702]",
+      "attacks": {
+        "war": {},
+        "non-war": {}
+      },
+      "defends": {
+        "war": {},
+        "non-war": {}
+      },
+      "armory": {
+        "used one of the faction's Xanax items": 1
+      }
+    }
+  },
+  "warStartTs": 1752775207,
+  "warEndTs": 1752887021,
+  "armoryOpenTs": 1752408075,
+  "rankedWarId": "28150",
+  "generatedAtIST": "2025-08-03 17:21:08 IST"
+}

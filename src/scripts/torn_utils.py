@@ -43,9 +43,14 @@ def make_api_call(relative_url: str) -> Any:
         return data
 
 
-def war_report_exists(file_name):
+def file_exists(file_name):
     file_path = os.path.join(ASSETS_DIR, file_name)
     return os.path.exists(file_path)
+
+
+def get_safe_timestamp(ts):
+    """Return ts if not None, else current unix time as int."""
+    return int(ts) if ts else int(time.time())
 
 
 def save_json_file(content, file_name):

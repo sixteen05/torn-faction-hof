@@ -1,5 +1,5 @@
 {
-  "generatedAtIST": "2025-07-28 18:19:31 IST",
+  "generatedAtIST": "2025-08-03 17:20:49 IST",
   "data": [
     {
       "enemyFactionId": "8944",
@@ -8,7 +8,8 @@
       "warDeclaredTs": 1748347276,
       "warStartTs": 1748552410,
       "warEndTs": 1748758865,
-      "rankedWarId": "26134"
+      "rankedWarId": "26134",
+      "warReportFile": "war-report-26134-1748552410-1748758865.json"
     },
     {
       "enemyFactionId": "48927",
@@ -17,7 +18,8 @@
       "warDeclaredTs": 1752580875,
       "warStartTs": 1752775207,
       "warEndTs": 1752887021,
-      "rankedWarId": "28150"
+      "rankedWarId": "28150",
+      "warReportFile": "war-report-28150-1752775207-1752887021.json"
     }
   ]
 }

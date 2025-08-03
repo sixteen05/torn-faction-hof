@@ -101,6 +101,15 @@ def get_armory_open_ts(war_news):
     return war_news["timestamp"] - 2 * 24 * 60 * 60
 
 
+def get_war_report_filename(ranked_war_id, war_start, war_end):
+    war_end_safe = war_end if war_end else 0
+    return f"war-report-{ranked_war_id}-{war_start}-{war_end_safe}.json"
+
+
+def filter_armory_news(item):
+    return ("Xanax" in item or "point" in item) and ("for their role as" not in item)
+
+
 def parse_item_use(each_news):
     # Extract user id and name from HTML
     match = re.search(r'XID=(\d+)">([^<]+)</a>', each_news.get("text", ""))
