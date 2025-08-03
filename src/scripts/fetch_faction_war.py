@@ -36,11 +36,10 @@ def fetch_and_parse_attacks(
     print(f"Aggregating attacks for {len(attacks)} records...")
     if aggregated_counts is None:
         aggregated_counts = {}
-    for i, each_attack in enumerate(attacks):
+    for _, each_attack in enumerate(attacks):
         parsed = parse_full_attack(each_attack, target_faction_id, member_tag_map)
-        increment_war_counters_per_user(
-            aggregated_counts, parsed["userId"], parsed["userTag"], parsed
-        )
+        increment_war_counters_per_user(aggregated_counts, parsed["userId"], parsed)
+
     print(f"Aggregated attack counts: {json.dumps(aggregated_counts)[:50]}...")
     print(f"Total members in output: {len(aggregated_counts)}")
     return aggregated_counts
@@ -55,23 +54,38 @@ def fetch_and_parse_armory(
     if aggregated_counts is None:
         aggregated_counts = {}
     for each_news in news:
-        member_id, user_tag, used_item = parse_item_use(each_news)
+        member_id, used_item = parse_item_use(each_news)
         if not member_id or not used_item:
             continue
         if filter_condition(used_item):
             if member_id not in aggregated_counts:
-                aggregated_counts[member_id] = {
-                    "userTag": user_tag,
-                    "attacks": {"war": {}, "non-war": {}},
-                    "defends": {"war": {}, "non-war": {}},
-                    "armory": {},
-                }
-            if used_item not in aggregated_counts[member_id]["armory"]:
-                aggregated_counts[member_id]["armory"][used_item] = 0
-            aggregated_counts[member_id]["armory"][used_item] += 1
+                aggregated_counts[member_id] = {}
+            if used_item not in aggregated_counts[member_id]:
+                aggregated_counts[member_id][used_item] = 0
+
+            aggregated_counts[member_id][used_item] += 1
     print(f"Aggregated armory usage: {json.dumps(aggregated_counts)[:500]}...")
     print(f"Total members in output: {len(aggregated_counts)}")
     return aggregated_counts
+
+
+def merge_attacks_and_armory(attack_counts, armory_counts, member_tag_map=None):
+    merged = {}
+    for member_id, attacks in attack_counts.items():
+        merged[member_id] = {
+            "userTag": member_tag_map.get(member_id, ""),
+            "hits": attacks,
+            "armory": armory_counts.get(member_id, {}),
+        }
+
+    for member_id, armory in armory_counts.items():
+        if member_id not in merged:
+            merged[member_id] = {
+                "userTag": member_tag_map.get(member_id, ""),
+                "attacks": {},
+                "armory": armory,
+            }
+    return merged
 
 
 def fetch_and_parse_war_news(from_ts):
@@ -148,14 +162,20 @@ def generate_war_dump(from_ts):
         armory_counts = fetch_and_parse_armory(
             str(armory_open), armory_to_ts, filter_armory_news, {}, member_tag_map
         )
+
+        # Merge attacks and armory counts
+        merged_counts = merge_attacks_and_armory(
+            attack_counts, armory_counts, member_tag_map
+        )
+
         save_json_file(
             {
-                "attackCounts": attack_counts,
-                "armoryCounts": armory_counts,
                 "warStartTs": war_start,
                 "warEndTs": war_end,
                 "armoryOpenTs": armory_open,
                 "rankedWarId": ranked_war_id,
+                "memberIdList": list(merged_counts.keys()),
+                "memberActions": merged_counts,
             },
             file_name,
         )

@@ -11,16 +11,6 @@ export const ALLOWED_HIT_TYPES_WAR = ["attacked", "hospitalized", "mugged"];
 // ASCII codes: [99, 111, 110, 45, 99, 111, 117, 110, 99, 105, 108]
 // Obfuscation: (((ascii ^ 42) * 13) + 97) ^ 314
 export const OBFUSCATED_PASSCODE = [1324, 728, 751, 390, 1324, 728, 1038, 751, 1324, 754, 725];
-export const PASSCODE = OBFUSCATED_PASSCODE
-  .map(n => {
-    // Reverse: (((ascii ^ 42) * 13) + 97) ^ 314
-    const step1 = n ^ 314; // XOR with 314
-    const step2 = step1 - 97;
-    const step3 = step2 / 13;
-    const ascii = step3 ^ 42; // XOR with 42 again to reverse
-    return String.fromCharCode(ascii);
-  })
-  .join("");
 
 // Defaults
 export const DEFAULT_WAR_PAY = 300000;
@@ -125,7 +115,10 @@ export const getPay = (agg: WarMemberAggregate, formValues: WarPayFormValues) =>
 };
 
 export const getCalculations = (agg: WarMemberAggregate) => {
-  const hitsMade = agg.warHits + agg.nonWarHits;
+  const warAttacksMade = Object.values(agg.warAttackBreakdown).reduce((sum, val) => sum + val, 0);
+  const nonWarAttacksMade = Object.values(agg.nonWarAttackBreakdown).reduce((sum, val) => sum + val, 0);
+  const hitsMade = warAttacksMade + nonWarAttacksMade;
+
   const expectedHits = agg.xanaxUsed * XANAX_HITS_PER_HIT + agg.pointsUsed * POINTS_HITS_PER_HIT;
   const compliantCalcString: string[] = [];
   compliantCalcString.push(`Xanax: ${agg.xanaxUsed} × ${XANAX_HITS_PER_HIT}`);
@@ -137,3 +130,15 @@ export const getCalculations = (agg: WarMemberAggregate) => {
   return { compliant, compliantCalcString };
 }
 
+export const passcodeEncoder = (passcode: string): number[] => {
+  return Array.from(passcode).map(char => {
+    const ascii = char.charCodeAt(0);
+    return (((ascii ^ 42) * 13) + 97) ^ 314;
+  });
+};
+
+export const passcodeValidator = (input: string): boolean => {
+  const encodedInput = passcodeEncoder(input);
+  return encodedInput.length === OBFUSCATED_PASSCODE.length &&
+    encodedInput.every((val, index) => val === OBFUSCATED_PASSCODE[index]);
+};

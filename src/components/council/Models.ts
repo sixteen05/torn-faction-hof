@@ -1,13 +1,17 @@
-
 export interface WarReportFile {
-  [userId: string]: WarReportFileMember;
+  warStartTs: number;
+  warEndTs: number;
+  armoryOpenTs: number;
+  rankedWarId: string;
+  generatedAtIST: string;
+  memberIdList: string[];
+  memberActions: { [memberId: string]: WarReportFileMember };
 }
 
 export interface WarReportFileMember {
   userId: string;
   userTag: string;
-  attacks: WarReportFileAttackSummary;
-  defends: WarReportFileAttackSummary;
+  hits: { attacks: WarReportFileAttackSummary; defends: WarReportFileAttackSummary };
   armory?: WarReportFileArmory;
 }
 
@@ -59,3 +63,11 @@ export interface ColumnDataTypesList {
   boolean: string[];
 }
 
+export interface FactionWarSummary {
+  rankedWarId: string;
+  enemyFactionId: string;
+  enemyFactionName: string;
+  warStartTs: number;
+  warEndTs: number;
+  warReportFile: string;
+}

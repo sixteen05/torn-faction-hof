@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PASSCODE } from "./CouncilUtil";
+import { passcodeValidator } from "./CouncilUtil";
 
 interface PasscodeScreenProps {
   onAuthenticated: () => void;
@@ -11,8 +11,7 @@ const PasscodeScreen: React.FC<PasscodeScreenProps> = ({ onAuthenticated }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Passcode entered:", input, "Expected:", PASSCODE);
-    if (input === PASSCODE) {
+    if (input && passcodeValidator(input)) {
       setError("");
       onAuthenticated();
     } else {

@@ -115,24 +115,21 @@ def parse_item_use(each_news):
     match = re.search(r'XID=(\d+)">([^<]+)</a>', each_news.get("text", ""))
     if not match:
         return None, None, None
+
     member_id = match.group(1)
-    member_name = match.group(2)
-    user_tag = f"{member_name} [{member_id}]"
     # The used item is after the closing </a>
     used_item = each_news.get("text", "").split("</a>", 1)[-1].strip()
-    return member_id, user_tag, used_item
+    return member_id, used_item
 
 
-def increment_war_counters_per_user(aggregated_counts, user_id, user_tag, _type):
+def increment_war_counters_per_user(aggregated_counts, user_id, _type):
     action = _type["action"]
     war_status = _type["war_status"]
     result = _type["result"]
     if user_id not in aggregated_counts:
         aggregated_counts[user_id] = {
-            "userTag": user_tag,
             "attacks": {"war": {}, "non-war": {}},
             "defends": {"war": {}, "non-war": {}},
-            "armory": {},
         }
     if result not in aggregated_counts[user_id][action][war_status]:
         aggregated_counts[user_id][action][war_status][result] = 0

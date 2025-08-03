@@ -4,6 +4,10 @@
   padding-bottom: 70px;
 }
 
+.council-layout:has(> .council-footer.hidden) {
+  padding-bottom: 0px;
+}
+
 .council-nav {
   min-width: 200px;
 }

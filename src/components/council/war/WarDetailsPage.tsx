@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { Card, Alert } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { Alert, Card } from "react-bootstrap";
+import { useLocation, useParams } from "react-router-dom";
+import { CouncilDataProvider } from "../CouncilDataProvider";
 import { DEFAULT_NON_WAR_PAY, DEFAULT_WAR_PAY, getPay } from "../CouncilUtil";
 import type { WarMemberAggregate, WarPayFormValues } from "../Models";
 import WarDetailsTable from "./WarDetailsTable";
 import WarPayForm from "./WarPayForm";
-import { CouncilDataProvider } from "../CouncilDataProvider";
 
 const WarDetailsPage: React.FC = () => {
   const { id } = useParams<{ id?: string }>();
+  const location = useLocation();
+  const warDetails = (location.state && (location.state as any).war) || null;
   const [formValues, setFormValues] = useState<WarPayFormValues>({
     warPay: DEFAULT_WAR_PAY,
     nonWarPay: DEFAULT_NON_WAR_PAY,
@@ -21,31 +23,26 @@ const WarDetailsPage: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const fetchWarData = async () => {
-      if (!id) {
-        setError("No war ID provided");
-        setLoading(false);
-        return;
-      }
+    if (!warDetails || !warDetails.warReportFile) {
+      setError("No war details or report file provided");
+      setLoading(false);
+      return;
+    }
 
-      try {
-        setLoading(true);
-        setError(null);
-        const data = await new CouncilDataProvider().fetchWarDetails(id);
-        setWarAggregates(data);
-      } catch (err) {
+    setLoading(true);
+    setError(null);
+    new CouncilDataProvider().fetchWarDetails(warDetails.warReportFile)
+      .then((data) => setWarAggregates(data))
+      .catch(err => {
         setError(err instanceof Error ? err.message : "Failed to fetch war details");
-      } finally {
-        setLoading(false);
-      }
-    };
+      })
+      .finally(() => setLoading(false));
 
-    fetchWarData();
-  }, [id]);
+  }, [warDetails]);
 
   return (
     <div>
-      <h2 className="mb-4">War Details (ID: {id})</h2>
+      <h2 className="mb-4">War Details (ID: {warDetails?.rankedWarId || id})</h2>
 
       {loading && (
         <Card className="mb-4 bg-dark text-light shadow-lg border-secondary border-2 rounded-4">

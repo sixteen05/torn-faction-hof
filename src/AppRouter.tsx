@@ -15,7 +15,7 @@ const AppRouter = () => (
         <Route index element={<Navigate to="chains" replace />} />
         <Route path="chains" element={<ChainsPage />} />
         <Route path="wars" element={<WarsListPage />} />
-        <Route path="wars/view/:id" element={<WarDetailsPage />} />
+        <Route path="war/:id" element={<WarDetailsPage />} />
         <Route path="ocs" element={<OCsPage />} />
       </Route>
     </Routes>
