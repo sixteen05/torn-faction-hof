@@ -1,5 +1,5 @@
 
-import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Navigate, Route, HashRouter as Router, Routes } from "react-router-dom";
 import ChainsPage from "./components/council/ChainsPage";
 import CouncilLayout from "./components/council/CouncilLayout";
 import OCsPage from "./components/council/OCsPage";

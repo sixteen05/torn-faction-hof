@@ -119,10 +119,12 @@ def fetch_and_parse_all(from_ts, filter_condition):
         print(
             f"Processing war: {enemy_faction_id} {war_start} - {war_end} (rankedWarId={ranked_war_id})"
         )
+
         # Attacks: war_start to war_end
         attack_counts = fetch_and_parse_attacks(
             str(war_start), str(war_end), int(enemy_faction_id), {}, member_tag_map
         )
+
         # Armory: armory_open to war_end
         armory_counts = fetch_and_parse_armory(
             str(armory_open), str(war_end), filter_condition, {}, member_tag_map
@@ -141,7 +143,6 @@ def fetch_and_parse_all(from_ts, filter_condition):
         print(f"Saved {file_name} in {ASSETS_DIR}")
 
 
-# --- Example Usage ---
 if __name__ == "__main__":
     from_ts = "1745838001"  # Example: 2024-04-01 00:00:01 UTC
     filter_condition = lambda item: ("Xanax" in item or "point" in item) and (

@@ -1,11 +1,26 @@
 import { type ReactElement } from "react";
-import type { WarMemberAggregate, WarPayFormValues, AttackBreakdown, ColumnDataTypesList } from "./Models";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import type { AttackBreakdown, ColumnDataTypesList, WarMemberAggregate, WarPayFormValues } from "./Models";
 
 // Forever constants
 export const XANAX_HITS_PER_HIT = 10;
 export const POINTS_HITS_PER_HIT = 1 / 5;
 export const ALLOWED_HIT_TYPES_WAR = ["attacked", "hospitalized", "mugged"];
+// Passcode obfuscation
+// Original passcode: "con-council"
+// ASCII codes: [99, 111, 110, 45, 99, 111, 117, 110, 99, 105, 108]
+// Obfuscation: (((ascii ^ 42) * 13) + 97) ^ 314
+export const OBFUSCATED_PASSCODE = [1324, 728, 751, 390, 1324, 728, 1038, 751, 1324, 754, 725];
+export const PASSCODE = OBFUSCATED_PASSCODE
+  .map(n => {
+    // Reverse: (((ascii ^ 42) * 13) + 97) ^ 314
+    const step1 = n ^ 314; // XOR with 314
+    const step2 = step1 - 97;
+    const step3 = step2 / 13;
+    const ascii = step3 ^ 42; // XOR with 42 again to reverse
+    return String.fromCharCode(ascii);
+  })
+  .join("");
 
 // Defaults
 export const DEFAULT_WAR_PAY = 300000;

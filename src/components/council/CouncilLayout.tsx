@@ -1,14 +1,20 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../../styles/Council.css";
 import React, { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import "../../styles/Council.css";
+import PasscodeScreen from "./PasscodeScreen";
 
 const CouncilLayout: React.FC = () => {
   const [footerHidden, setFooterHidden] = useState(false);
+  const [authenticated, setAuthenticated] = useState(false);
 
   const hideFooter = () => {
     setFooterHidden(true);
   };
+
+  if (!authenticated) {
+    return <PasscodeScreen onAuthenticated={() => setAuthenticated(true)} />;
+  }
 
   return (
     <div className="council-layout d-flex bg-dark text-light min-vh-100" data-bs-theme="dark">
