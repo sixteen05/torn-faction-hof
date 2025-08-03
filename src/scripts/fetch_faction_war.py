@@ -2,12 +2,13 @@ import json
 from torn_utils import (
     save_json_file,
     file_exists,
+    get_safe_timestamp,
     ASSETS_DIR,
 )
 from data_providers import (
+    fetch_armory_news,
     fetch_faction_members,
     fetch_full_attacks,
-    fetch_armory_news,
     fetch_ranked_war_news,
 )
 from data_parsers import (
@@ -15,6 +16,7 @@ from data_parsers import (
     get_armory_open_ts,
     get_enemy_faction_details_from_war_news,
     get_ranked_war_id_from_war_news,
+    get_war_report_filename,
     increment_war_counters_per_user,
     is_war_announced_news,
     is_war_end_news,
@@ -22,9 +24,6 @@ from data_parsers import (
     parse_full_attack,
     parse_item_use,
 )
-from data_parsers import get_war_report_filename
-from data_parsers import get_war_report_filename
-from torn_utils import get_safe_timestamp
 
 
 def fetch_and_parse_attacks(

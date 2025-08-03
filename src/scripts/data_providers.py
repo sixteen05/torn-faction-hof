@@ -68,3 +68,31 @@ def fetch_ranked_war_news(from_ts: str) -> list:
             break
     print(f"Total ranked war news fetched: {len(news)}")
     return news
+
+
+def fetch_faction_chains(from_ts: str) -> list:
+    chains = []
+    next_from = from_ts
+    while True:
+        print(f"Fetching faction chains from {next_from}")
+        r = make_api_call(
+            f"/v2/faction/chains?from={next_from}&sort=ASC&limit={PAGE_SIZE}&key={KEY}"
+        )
+        page_chains = r.get("chains", [])
+        print(f"Fetched {len(page_chains)} chains")
+        for chain in page_chains:
+            chains.append(
+                {
+                    "id": chain.get("id"),
+                    "start": chain.get("start"),
+                    "end": chain.get("end"),
+                    "respect": chain.get("respect"),
+                    "chain": chain.get("chain"),
+                }
+            )
+        if page_chains:
+            next_from = str(int(page_chains[-1]["end"]) + 1)
+        else:
+            break
+    print(f"Total chains fetched: {len(chains)}")
+    return chains

@@ -61,6 +61,7 @@ const WarsPage: React.FC = () => {
               <th>War Start</th>
               <th>War End</th>
               <th>View</th>
+              <th>Open in Torn</th>
             </tr>
           </thead>
           <tbody>
@@ -78,6 +79,16 @@ const WarsPage: React.FC = () => {
                   >
                     View
                   </Button>
+                </td>
+                <td>
+                  <a
+                    href={`https://www.torn.com/war.php?step=rankreport&rankID=${war.rankedWarId}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-warning btn-sm"
+                  >
+                    Torn Link
+                  </a>
                 </td>
               </tr>
             ))}
