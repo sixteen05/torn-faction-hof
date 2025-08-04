@@ -8,6 +8,15 @@
   padding-bottom: 0px;
 }
 
+.password-gif {
+  width: 420px;
+  height: auto;
+}
+
+.password-gif.hidden {
+  display: none;
+}
+
 .council-nav {
   min-width: 200px;
 }

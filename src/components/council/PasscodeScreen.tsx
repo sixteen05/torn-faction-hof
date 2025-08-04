@@ -37,6 +37,11 @@ const PasscodeScreen: React.FC<PasscodeScreenProps> = ({ onAuthenticated }) => {
         {error && <div className="text-danger mb-2">{error}</div>}
         <button type="submit" className="btn btn-warning w-100">Enter</button>
       </form>
+      <div className={"mt-3"}>
+        <img src="/public/password.gif" alt="Incorrect password funny GIF"
+          className={"img-fluid password-gif mt-2 " + (!error && "hidden")} />
+      </div>
+
       <div className="mt-3 text-muted small">Contact <a href="https://www.torn.com/profile.php?XID=3538936" target="_blank" rel="noopener noreferrer" className="text-info">red-it</a> for access</div>
     </div>
   );
