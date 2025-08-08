@@ -1,0 +1,38 @@
+{
+  "chainId": 48391743,
+  "chainStart": 1748590509,
+  "chainEnd": 1748591064,
+  "isWarChain": true,
+  "memberActions": {
+    "2005014": {
+      "attacks": {
+        "avgCount": 13,
+        "avgMods": 1.7415384615384615,
+        "avgRespect": 3.8430769230769233,
+        "count": 0,
+        "hitCount": 13,
+        "hitTypes": {
+          "Attacked": 10,
+          "Lost": 3
+        },
+        "totals": 49.96,
+        "userTag": "Fitzs35 [2005014]"
+      },
+      "armory": {}
+    },
+    "2746246": {
+      "attacks": {
+        "avgCount": 0,
+        "avgMods": 0.0,
+        "avgRespect": 0.0,
+        "count": 0,
+        "hitCount": 1,
+        "hitTypes": {},
+        "totals": 0.0,
+        "userTag": "RHowzy [2746246]"
+      },
+      "armory": {}
+    }
+  },
+  "generatedAtIST": "2025-08-04 16:13:50 IST"
+}

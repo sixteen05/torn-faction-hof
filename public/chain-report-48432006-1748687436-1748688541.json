@@ -1,0 +1,56 @@
+{
+  "chainId": 48432006,
+  "chainStart": 1748687436,
+  "chainEnd": 1748688541,
+  "isWarChain": true,
+  "memberActions": {
+    "3666755": {
+      "attacks": {
+        "avgCount": 7,
+        "avgMods": 2.701428571428571,
+        "avgRespect": 2.877142857142857,
+        "count": 0,
+        "hitCount": 7,
+        "hitTypes": {
+          "Attacked": 7
+        },
+        "totals": 20.139999999999997,
+        "userTag": "HewhoHaHa [3666755]"
+      },
+      "armory": {}
+    },
+    "2746246": {
+      "attacks": {
+        "avgCount": 15,
+        "avgMods": 1.6006666666666667,
+        "avgRespect": 3.638666666666667,
+        "count": 0,
+        "hitCount": 16,
+        "hitTypes": {
+          "Attacked": 12,
+          "Lost": 2,
+          "Interrupted": 1
+        },
+        "totals": 54.580000000000005,
+        "userTag": "RHowzy [2746246]"
+      },
+      "armory": {}
+    },
+    "3646427": {
+      "attacks": {
+        "avgCount": 4,
+        "avgMods": 2.6825,
+        "avgRespect": 2.9800000000000004,
+        "count": 0,
+        "hitCount": 4,
+        "hitTypes": {
+          "Attacked": 4
+        },
+        "totals": 11.920000000000002,
+        "userTag": "Nebss [3646427]"
+      },
+      "armory": {}
+    }
+  },
+  "generatedAtIST": "2025-08-04 16:14:04 IST"
+}

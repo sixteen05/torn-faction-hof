@@ -1,12 +1,14 @@
 import re
-from torn_utils import CON_FACTION_ID
+from torn_utils import CON_FACTION_ID, BONUS_HITS
+from typing import List, Dict, Union
+from collections import defaultdict
 
 
 # --- Data Processing ---
 def parse_full_attack(each_attack, target_faction_id, member_tag_map):
     attacker = each_attack.get("attacker") or {}
     defender = each_attack.get("defender") or {}
-    result = each_attack.get("result", "").lower() or "unknown"
+    result = each_attack.get("result", "").lower()
     attacker_faction_id = attacker.get("faction_id")
     defender_faction_id = defender.get("faction_id")
     is_war = bool(
@@ -30,8 +32,8 @@ def parse_full_attack(each_attack, target_faction_id, member_tag_map):
         else "unknown"
     )
 
-    if result == "unknown" or user_id is None:
-        raise ValueError(f"Invalid attack data: {each_attack}")
+    if user_id is None:
+        raise ValueError(f"Invalid user ID: {each_attack}")
 
     return {
         "userId": str(user_id),
@@ -134,3 +136,59 @@ def increment_war_counters_per_user(aggregated_counts, user_id, _type):
     if result not in aggregated_counts[user_id][action][war_status]:
         aggregated_counts[user_id][action][war_status][result] = 0
     aggregated_counts[user_id][action][war_status][result] += 1
+
+
+def increment_chain_counters_per_user(attacks: List[Dict]) -> Dict[str, float]:
+    user_aggregate = defaultdict(
+        lambda: {
+            "avgCount": 0,
+            "avgMods": 0.0,
+            "avgRespect": 0.0,
+            "hitCount": 0,
+            "hitTypes": defaultdict(int),
+            "totalRespect": 0.0,
+            "hasBonusHit": False,
+        }
+    )
+    has_war_hits = False
+
+    for attack in attacks:
+        if (
+            not attack["attacker"]
+            or not attack["attacker"]["faction"]
+            or not attack["attacker"]["faction"]["id"]
+            or attack["attacker"]["faction"]["id"] != CON_FACTION_ID
+        ):
+            continue
+
+        user_id = attack["attacker"]["id"]
+        user_aggregate[user_id]["hitCount"] += 1
+        if (attack["modifiers"].get("war", 1) or 1) > 1:
+            has_war_hits = True
+
+        result = attack.get("result", "unknown")
+        user_aggregate[user_id]["hitTypes"][result] = (
+            user_aggregate[user_id]["hitTypes"].get(result, 0) + 1
+        )
+
+        if attack["chain"] in BONUS_HITS:
+            user_aggregate[user_id]["hasBonusHit"] = True
+            continue
+
+        user_aggregate[user_id]["avgMods"] += float(
+            attack["modifiers"].get("fair_fight", 1)
+        )
+        user_aggregate[user_id]["totalRespect"] += float(attack["respect_gain"])
+        user_aggregate[user_id]["avgCount"] += 1
+
+    for attacker in user_aggregate.keys():
+        avgCount = user_aggregate[attacker]["avgCount"]
+        totalRespect = user_aggregate[attacker]["totalRespect"]
+
+        if avgCount > 0:
+            user_aggregate[attacker]["avgRespect"] = totalRespect / avgCount
+            user_aggregate[attacker]["avgMods"] /= avgCount
+
+        # del user_aggregate[attacker]["avgCount"]
+
+    return dict(user_aggregate), has_war_hits

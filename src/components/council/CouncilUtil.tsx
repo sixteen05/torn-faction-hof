@@ -17,6 +17,11 @@ export const DEFAULT_WAR_PAY = 300000;
 export const DEFAULT_NON_WAR_PAY = 100000;
 export const DEFAULT_NON_WAR_INCOMING_DEDUCTION = 10000;
 export const DEFAULT_WAR_INCOMING_DEDUCTION = 10000;
+export const DEFAULT_RESPECT_THRESHOLD = 3;
+export const DEFAULT_PAY_BELOW = 50000;
+export const DEFAULT_PAY_ABOVE = 100000;
+export const DEFAULT_COUNT_ALL_TYPES = true;
+
 
 // Generic render utility function
 export const wrapWithTooltip = (

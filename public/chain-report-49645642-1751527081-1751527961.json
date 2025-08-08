@@ -1,0 +1,59 @@
+{
+  "chainId": 49645642,
+  "chainStart": 1751527081,
+  "chainEnd": 1751527961,
+  "isWarChain": false,
+  "memberIdList": [
+    3686634,
+    3256680,
+    3500001
+  ],
+  "memberActions": {
+    "3686634": {
+      "attacks": {
+        "avgCount": 5,
+        "avgMods": 2.0799999999999996,
+        "avgRespect": 1.652,
+        "hitCount": 5,
+        "hitTypes": {
+          "Attacked": 1,
+          "Lost": 1,
+          "Mugged": 3
+        },
+        "totalRespect": 8.26
+      },
+      "userTag": "ARRODOX [3686634]",
+      "armory": {}
+    },
+    "3256680": {
+      "attacks": {
+        "avgCount": 9,
+        "avgMods": 1.51,
+        "avgRespect": 1.6800000000000002,
+        "hitCount": 10,
+        "hitTypes": {
+          "Attacked": 10
+        },
+        "hasBonusHit": true,
+        "totalRespect": 15.120000000000001
+      },
+      "userTag": "WolfYT [3256680]",
+      "armory": {}
+    },
+    "3500001": {
+      "attacks": {
+        "avgCount": 2,
+        "avgMods": 1.215,
+        "avgRespect": 1.7000000000000002,
+        "hitCount": 2,
+        "hitTypes": {
+          "Attacked": 2
+        },
+        "totalRespect": 3.4000000000000004
+      },
+      "userTag": "uuuuu888uu [3500001]",
+      "armory": {}
+    }
+  },
+  "generatedAtIST": "2025-08-04 16:15:48 IST"
+}

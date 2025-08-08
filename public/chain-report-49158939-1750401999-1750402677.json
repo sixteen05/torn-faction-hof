@@ -1,0 +1,40 @@
+{
+  "chainId": 49158939,
+  "chainStart": 1750401999,
+  "chainEnd": 1750402677,
+  "isWarChain": false,
+  "memberActions": {
+    "3256680": {
+      "attacks": {
+        "avgCount": 22,
+        "avgMods": 1.6540909090909095,
+        "avgRespect": 1.846818181818182,
+        "count": 0,
+        "hitCount": 24,
+        "hitTypes": {
+          "Attacked": 21,
+          "Assist": 1
+        },
+        "totals": 40.63,
+        "userTag": "WolfYT [3256680]"
+      },
+      "armory": {}
+    },
+    "3766072": {
+      "attacks": {
+        "avgCount": 2,
+        "avgMods": 1.63,
+        "avgRespect": 1.76,
+        "count": 0,
+        "hitCount": 2,
+        "hitTypes": {
+          "Attacked": 2
+        },
+        "totals": 3.52,
+        "userTag": "Circekid [3766072]"
+      },
+      "armory": {}
+    }
+  },
+  "generatedAtIST": "2025-08-04 16:14:52 IST"
+}

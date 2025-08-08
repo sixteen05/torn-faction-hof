@@ -1,0 +1,168 @@
+{
+  "chainId": 48394368,
+  "chainStart": 1748597986,
+  "chainEnd": 1748600638,
+  "isWarChain": true,
+  "memberActions": {
+    "2746246": {
+      "attacks": {
+        "avgCount": 17,
+        "avgMods": 1.5758823529411765,
+        "avgRespect": 4.030588235294117,
+        "count": 0,
+        "hitCount": 19,
+        "hitTypes": {
+          "Hospitalized": 2,
+          "Attacked": 15
+        },
+        "totals": 68.52,
+        "userTag": "RHowzy [2746246]"
+      },
+      "armory": {}
+    },
+    "3671051": {
+      "attacks": {
+        "avgCount": 17,
+        "avgMods": 2.2888235294117645,
+        "avgRespect": 2.594117647058823,
+        "count": 0,
+        "hitCount": 17,
+        "hitTypes": {
+          "Attacked": 14,
+          "Assist": 1,
+          "Lost": 1,
+          "Interrupted": 1
+        },
+        "totals": 44.099999999999994,
+        "userTag": "pooq [3671051]"
+      },
+      "armory": {}
+    },
+    "3593679": {
+      "attacks": {
+        "avgCount": 1,
+        "avgMods": 1.0,
+        "avgRespect": 0.0,
+        "count": 0,
+        "hitCount": 1,
+        "hitTypes": {
+          "Lost": 1
+        },
+        "totals": 0.0,
+        "userTag": "Shelly_Lovegood [3593679]"
+      },
+      "armory": {}
+    },
+    "3721360": {
+      "attacks": {
+        "avgCount": 11,
+        "avgMods": 1.7372727272727273,
+        "avgRespect": 1.88,
+        "count": 0,
+        "hitCount": 11,
+        "hitTypes": {
+          "Attacked": 10,
+          "Interrupted": 1
+        },
+        "totals": 20.68,
+        "userTag": "3721360"
+      },
+      "armory": {}
+    },
+    "3635425": {
+      "attacks": {
+        "avgCount": 11,
+        "avgMods": 1.7772727272727273,
+        "avgRespect": 2.256363636363637,
+        "count": 0,
+        "hitCount": 11,
+        "hitTypes": {
+          "Attacked": 11
+        },
+        "totals": 24.820000000000004,
+        "userTag": "Shasta_McNasty [3635425]"
+      },
+      "armory": {}
+    },
+    "2219053": {
+      "attacks": {
+        "avgCount": 5,
+        "avgMods": 1.8,
+        "avgRespect": 3.812,
+        "count": 0,
+        "hitCount": 5,
+        "hitTypes": {
+          "Stalemate": 2,
+          "Lost": 1,
+          "Attacked": 2
+        },
+        "totals": 19.06,
+        "userTag": "Noumosh [2219053]"
+      },
+      "armory": {}
+    },
+    "3635443": {
+      "attacks": {
+        "avgCount": 5,
+        "avgMods": 2.068,
+        "avgRespect": 1.746,
+        "count": 0,
+        "hitCount": 5,
+        "hitTypes": {
+          "Mugged": 2,
+          "Hospitalized": 1,
+          "Interrupted": 2
+        },
+        "totals": 8.73,
+        "userTag": "ToxicTitanN7 [3635443]"
+      },
+      "armory": {}
+    },
+    "2348502": {
+      "attacks": {
+        "avgCount": 1,
+        "avgMods": 1.0,
+        "avgRespect": 0.0,
+        "count": 0,
+        "hitCount": 2,
+        "hitTypes": {
+          "Stalemate": 1
+        },
+        "totals": 0.0,
+        "userTag": "DragonArmy [2348502]"
+      },
+      "armory": {}
+    },
+    "3608198": {
+      "attacks": {
+        "avgCount": 1,
+        "avgMods": 3.0,
+        "avgRespect": 3.86,
+        "count": 0,
+        "hitCount": 1,
+        "hitTypes": {
+          "Attacked": 1
+        },
+        "totals": 3.86,
+        "userTag": "3608198"
+      },
+      "armory": {}
+    },
+    "3670808": {
+      "attacks": {
+        "avgCount": 4,
+        "avgMods": 2.2825,
+        "avgRespect": 2.8075,
+        "count": 0,
+        "hitCount": 4,
+        "hitTypes": {
+          "Attacked": 4
+        },
+        "totals": 11.23,
+        "userTag": "EdFloats [3670808]"
+      },
+      "armory": {}
+    }
+  },
+  "generatedAtIST": "2025-08-04 16:13:53 IST"
+}

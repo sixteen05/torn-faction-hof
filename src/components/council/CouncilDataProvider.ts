@@ -1,5 +1,5 @@
 import { ALLOWED_HIT_TYPES_WAR } from "./CouncilUtil";
-import type { AttackBreakdown, FactionWarSummary, WarMemberAggregate, WarReportFile } from "./Models";
+import type { AttackBreakdown, ChainMemberAggregate, ChainSummary, FactionWarSummary, WarMemberAggregate, WarReportFile } from "./Models";
 
 export class CouncilDataProvider {
   public async fetchWarDetails(warFileName: string): Promise<WarMemberAggregate[]> {
@@ -75,5 +75,58 @@ export class CouncilDataProvider {
     } catch (error) {
       throw new Error(`Failed to fetch wars list: ${error instanceof Error ? error.message : "Unknown error"}`);
     }
+  }
+
+  public async fetchChainsList(): Promise<ChainSummary[]> {
+    try {
+      const response = await fetch('/public/chains.json');
+      if (!response.ok) {
+        throw new Error(`Failed to fetch chains list: ${response.statusText}`);
+      }
+
+      const json = await response.json();
+      if (!json.data || !Array.isArray(json.data)) {
+        throw new Error('Invalid chains.json format');
+      }
+
+      return json.data;
+    } catch (error) {
+      throw new Error(`Failed to fetch chains list: ${error instanceof Error ? error.message : "Unknown error"}`);
+    }
+  }
+
+  public async fetchChainDetails(chainFileName: string): Promise<ChainMemberAggregate[]> {
+    try {
+      const response = await fetch(`/public/${chainFileName}`);
+      if (!response.ok)
+        throw new Error("Failed to fetch chain report");
+
+      const data = await response.json();
+      let aggregate: ChainMemberAggregate[] = [];
+
+      if (data.memberIdList) {
+        aggregate = data.memberIdList.map((userId: string) => ({
+          userTag: data['memberActions']?.[userId]?.['userTag'] || userId,
+          respect: data['memberActions']?.[userId]?.['attacks']?.['totalRespect'] || 0,
+          averageRespect: data['memberActions']?.[userId]?.['attacks']?.['avgRespect'] || 0,
+          averageModifiers: data['memberActions']?.[userId]?.['attacks']?.['avgMods'] || 0,
+          attacks: data['memberActions']?.[userId]?.['attacks']?.['hitCount'] || 0,
+          attackBreakdown: data['memberActions']?.[userId]?.['attacks']?.['hitTypes'] || {},
+        }));
+      }
+
+      return aggregate;
+    } catch (error) {
+      throw new Error(`Failed to fetch chain details: ${error instanceof Error ? error.message : "Unknown error"}`);
+    }
+  }
+
+  public async fetchChainDetailsFromId(chainId: string): Promise<ChainMemberAggregate[]> {
+    const chains = await this.fetchChainsList();
+    const chain = chains.find(c => `${c.id}` === chainId);
+    if (!chain)
+      throw new Error(`Chain not found: ${chainId}`);
+
+    return this.fetchChainDetails(chain.chainReportFile);
   }
 }

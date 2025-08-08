@@ -71,3 +71,40 @@ export interface FactionWarSummary {
   warEndTs: number;
   warReportFile: string;
 }
+
+export interface ChainSummary {
+  id: number;
+  start: number;
+  end: number;
+  respect: number;
+  chain: number;
+  isWarChain: boolean;
+  chainReportFile: string;
+}
+
+export interface ChainPayFormValues {
+  respectThreshold: number;
+  payBelowThreshold: number;
+  payAboveThreshold: number;
+  showAdvanced: boolean;
+  countAllTypes: boolean;
+}
+
+export interface ChainMemberAggregate {
+  attackBreakdown: Record<string, number>;
+  attacks: number;
+  averageModifiers: number;
+  averageRespect: number;
+  name: string;
+  respect: number;
+  userTag: string;
+}
+
+export interface ChainPayFormValues {
+  respectThreshold: number;
+  payBelowThreshold: number;
+  payAboveThreshold: number;
+  showAdvanced: boolean;
+  countAllTypes: boolean;
+}
+

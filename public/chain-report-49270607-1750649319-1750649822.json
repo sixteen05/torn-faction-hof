@@ -1,0 +1,54 @@
+{
+  "chainId": 49270607,
+  "chainStart": 1750649319,
+  "chainEnd": 1750649822,
+  "isWarChain": false,
+  "memberActions": {
+    "3500001": {
+      "attacks": {
+        "avgCount": 2,
+        "avgMods": 1.145,
+        "avgRespect": 1.53,
+        "count": 0,
+        "hitCount": 2,
+        "hitTypes": {
+          "Attacked": 2
+        },
+        "totals": 3.06,
+        "userTag": "uuuuu888uu [3500001]"
+      },
+      "armory": {}
+    },
+    "2763996": {
+      "attacks": {
+        "avgCount": 3,
+        "avgMods": 2.3333333333333335,
+        "avgRespect": 2.5399999999999996,
+        "count": 0,
+        "hitCount": 3,
+        "hitTypes": {
+          "Mugged": 3
+        },
+        "totals": 7.619999999999999,
+        "userTag": "GOOOON [2763996]"
+      },
+      "armory": {}
+    },
+    "2757057": {
+      "attacks": {
+        "avgCount": 4,
+        "avgMods": 1.595,
+        "avgRespect": 2.3725,
+        "count": 0,
+        "hitCount": 5,
+        "hitTypes": {
+          "Attacked": 4
+        },
+        "totals": 9.49,
+        "userTag": "Illusive_ [2757057]"
+      },
+      "armory": {}
+    }
+  },
+  "generatedAtIST": "2025-08-04 16:15:04 IST"
+}

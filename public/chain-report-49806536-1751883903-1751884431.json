@@ -1,0 +1,24 @@
+{
+  "chainId": 49806536,
+  "chainStart": 1751883903,
+  "chainEnd": 1751884431,
+  "isWarChain": false,
+  "memberActions": {
+    "3670808": {
+      "attacks": {
+        "avgCount": 13,
+        "avgMods": 1.6646153846153844,
+        "avgRespect": 1.2984615384615383,
+        "count": 0,
+        "hitCount": 14,
+        "hitTypes": {
+          "Mugged": 13
+        },
+        "totals": 16.88,
+        "userTag": "EdFloats [3670808]"
+      },
+      "armory": {}
+    }
+  },
+  "generatedAtIST": "2025-08-04 16:15:51 IST"
+}

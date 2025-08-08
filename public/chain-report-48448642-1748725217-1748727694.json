@@ -1,0 +1,240 @@
+{
+  "chainId": 48448642,
+  "chainStart": 1748725217,
+  "chainEnd": 1748727694,
+  "isWarChain": true,
+  "memberActions": {
+    "2348502": {
+      "attacks": {
+        "avgCount": 9,
+        "avgMods": 1.832222222222222,
+        "avgRespect": 5.67111111111111,
+        "count": 0,
+        "hitCount": 11,
+        "hitTypes": {
+          "Attacked": 9
+        },
+        "totals": 51.03999999999999,
+        "userTag": "DragonArmy [2348502]"
+      },
+      "armory": {}
+    },
+    "3670808": {
+      "attacks": {
+        "avgCount": 28,
+        "avgMods": 2.1067857142857145,
+        "avgRespect": 2.6939285714285717,
+        "count": 0,
+        "hitCount": 28,
+        "hitTypes": {
+          "Attacked": 27,
+          "Assist": 1
+        },
+        "totals": 75.43,
+        "userTag": "EdFloats [3670808]"
+      },
+      "armory": {}
+    },
+    "3636270": {
+      "attacks": {
+        "avgCount": 5,
+        "avgMods": 2.582,
+        "avgRespect": 2.184,
+        "count": 0,
+        "hitCount": 5,
+        "hitTypes": {
+          "Lost": 1,
+          "Mugged": 4
+        },
+        "totals": 10.92,
+        "userTag": "3636270"
+      },
+      "armory": {}
+    },
+    "3646427": {
+      "attacks": {
+        "avgCount": 13,
+        "avgMods": 2.778461538461538,
+        "avgRespect": 3.1353846153846154,
+        "count": 0,
+        "hitCount": 14,
+        "hitTypes": {
+          "Attacked": 13
+        },
+        "totals": 40.76,
+        "userTag": "Nebss [3646427]"
+      },
+      "armory": {}
+    },
+    "3721360": {
+      "attacks": {
+        "avgCount": 7,
+        "avgMods": 1.6199999999999999,
+        "avgRespect": 1.6771428571428573,
+        "count": 0,
+        "hitCount": 7,
+        "hitTypes": {
+          "Attacked": 6,
+          "Lost": 1
+        },
+        "totals": 11.74,
+        "userTag": "3721360"
+      },
+      "armory": {}
+    },
+    "3671051": {
+      "attacks": {
+        "avgCount": 6,
+        "avgMods": 2.671666666666667,
+        "avgRespect": 3.6233333333333335,
+        "count": 0,
+        "hitCount": 6,
+        "hitTypes": {
+          "Attacked": 6
+        },
+        "totals": 21.740000000000002,
+        "userTag": "pooq [3671051]"
+      },
+      "armory": {}
+    },
+    "3416026": {
+      "attacks": {
+        "avgCount": 9,
+        "avgMods": 1.1477777777777778,
+        "avgRespect": 0.9877777777777779,
+        "count": 0,
+        "hitCount": 10,
+        "hitTypes": {
+          "Attacked": 6,
+          "Lost": 3
+        },
+        "totals": 8.89,
+        "userTag": "chicken_marc [3416026]"
+      },
+      "armory": {}
+    },
+    "2885721": {
+      "attacks": {
+        "avgCount": 8,
+        "avgMods": 2.22375,
+        "avgRespect": 3.17875,
+        "count": 0,
+        "hitCount": 8,
+        "hitTypes": {
+          "Attacked": 8
+        },
+        "totals": 25.43,
+        "userTag": "--KRATOS-- [2885721]"
+      },
+      "armory": {}
+    },
+    "2747986": {
+      "attacks": {
+        "avgCount": 24,
+        "avgMods": 1.1000000000000003,
+        "avgRespect": 1.36,
+        "count": 0,
+        "hitCount": 24,
+        "hitTypes": {
+          "Attacked": 24
+        },
+        "totals": 32.64,
+        "userTag": "Maxwellll [2747986]"
+      },
+      "armory": {}
+    },
+    "3760084": {
+      "attacks": {
+        "avgCount": 8,
+        "avgMods": 2.4000000000000004,
+        "avgRespect": 2.92,
+        "count": 0,
+        "hitCount": 8,
+        "hitTypes": {
+          "Attacked": 8
+        },
+        "totals": 23.36,
+        "userTag": "DeNuke [3760084]"
+      },
+      "armory": {}
+    },
+    "3657653": {
+      "attacks": {
+        "avgCount": 11,
+        "avgMods": 2.6836363636363636,
+        "avgRespect": 3.603636363636363,
+        "count": 0,
+        "hitCount": 11,
+        "hitTypes": {
+          "Attacked": 10,
+          "Stalemate": 1
+        },
+        "totals": 39.63999999999999,
+        "userTag": "OJpun [3657653]"
+      },
+      "armory": {}
+    },
+    "2005014": {
+      "attacks": {
+        "avgCount": 1,
+        "avgMods": 1.37,
+        "avgRespect": 4.14,
+        "count": 0,
+        "hitCount": 1,
+        "hitTypes": {
+          "Attacked": 1
+        },
+        "totals": 4.14,
+        "userTag": "Fitzs35 [2005014]"
+      },
+      "armory": {}
+    },
+    "2223480": {
+      "attacks": {
+        "avgCount": 3,
+        "avgMods": 1.9900000000000002,
+        "avgRespect": 6.2700000000000005,
+        "count": 0,
+        "hitCount": 3,
+        "hitTypes": {
+          "Attacked": 3
+        },
+        "totals": 18.810000000000002,
+        "userTag": "HadesGodz [2223480]"
+      },
+      "armory": {}
+    },
+    "3677604": {
+      "attacks": {
+        "avgCount": 15,
+        "avgMods": 1.7940000000000003,
+        "avgRespect": 2.3993333333333333,
+        "count": 0,
+        "hitCount": 15,
+        "hitTypes": {
+          "Attacked": 15
+        },
+        "totals": 35.99,
+        "userTag": "Yugoslav45 [3677604]"
+      },
+      "armory": {}
+    },
+    "2397674": {
+      "attacks": {
+        "avgCount": 2,
+        "avgMods": 1.115,
+        "avgRespect": 1.7,
+        "count": 0,
+        "hitCount": 2,
+        "hitTypes": {
+          "Attacked": 1,
+          "Interrupted": 1
+        },
+        "totals": 3.4,
+        "userTag": "2397674"
+      },
+      "armory": {}
+    }
+  },
+  "generatedAtIST": "2025-08-04 16:14:44 IST"
+}

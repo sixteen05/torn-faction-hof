@@ -1,0 +1,40 @@
+{
+  "chainId": 47582495,
+  "chainStart": 1746498918,
+  "chainEnd": 1746499506,
+  "isWarChain": false,
+  "memberActions": {
+    "2878059": {
+      "attacks": {
+        "avgCount": 7,
+        "avgMods": 1.0657142857142856,
+        "avgRespect": 0.8771428571428571,
+        "count": 0,
+        "hitCount": 8,
+        "hitTypes": {
+          "Attacked": 1,
+          "Mugged": 6
+        },
+        "totals": 6.14,
+        "userTag": "2878059"
+      },
+      "armory": {}
+    },
+    "3714870": {
+      "attacks": {
+        "avgCount": 2,
+        "avgMods": 1.9649999999999999,
+        "avgRespect": 2.2,
+        "count": 0,
+        "hitCount": 2,
+        "hitTypes": {
+          "Attacked": 2
+        },
+        "totals": 4.4,
+        "userTag": "3714870"
+      },
+      "armory": {}
+    }
+  },
+  "generatedAtIST": "2025-08-04 16:13:04 IST"
+}

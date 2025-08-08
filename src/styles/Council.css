@@ -1,5 +1,9 @@
 /* Council page professional/clean look, no shared styles */
 
+body {
+  overflow-y: scroll;
+}
+
 .council-layout {
   padding-bottom: 70px;
 }

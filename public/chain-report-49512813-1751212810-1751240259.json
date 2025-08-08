@@ -1,0 +1,919 @@
+{
+  "chainId": 49512813,
+  "chainStart": 1751212810,
+  "chainEnd": 1751240259,
+  "isWarChain": false,
+  "memberActions": {
+    "2348502": {
+      "attacks": {
+        "avgCount": 92,
+        "avgMods": 2.843152173913044,
+        "avgRespect": 7.036195652173913,
+        "count": 0,
+        "hitCount": 93,
+        "hitTypes": {
+          "Attacked": 91,
+          "Hospitalized": 1
+        },
+        "totals": 647.33,
+        "userTag": "DragonArmy [2348502]"
+      },
+      "armory": {}
+    },
+    "3670808": {
+      "attacks": {
+        "avgCount": 58,
+        "avgMods": 1.756379310344827,
+        "avgRespect": 2.572931034482758,
+        "count": 0,
+        "hitCount": 58,
+        "hitTypes": {
+          "Attacked": 56,
+          "Lost": 1,
+          "Assist": 1
+        },
+        "totals": 149.22999999999996,
+        "userTag": "EdFloats [3670808]"
+      },
+      "armory": {}
+    },
+    "3679918": {
+      "attacks": {
+        "avgCount": 54,
+        "avgMods": 2.357037037037037,
+        "avgRespect": 3.397962962962964,
+        "count": 0,
+        "hitCount": 55,
+        "hitTypes": {
+          "Attacked": 54
+        },
+        "totals": 183.49000000000007,
+        "userTag": "Jessrule [3679918]"
+      },
+      "armory": {}
+    },
+    "3437431": {
+      "attacks": {
+        "avgCount": 55,
+        "avgMods": 2.4694545454545453,
+        "avgRespect": 3.7667272727272714,
+        "count": 0,
+        "hitCount": 56,
+        "hitTypes": {
+          "Mugged": 1,
+          "Attacked": 48,
+          "Assist": 1,
+          "Lost": 5
+        },
+        "totals": 207.16999999999993,
+        "userTag": "Vincenty69 [3437431]"
+      },
+      "armory": {}
+    },
+    "3671051": {
+      "attacks": {
+        "avgCount": 62,
+        "avgMods": 2.7943548387096784,
+        "avgRespect": 4.307741935483869,
+        "count": 0,
+        "hitCount": 62,
+        "hitTypes": {
+          "Attacked": 58,
+          "Lost": 4
+        },
+        "totals": 267.07999999999987,
+        "userTag": "pooq [3671051]"
+      },
+      "armory": {}
+    },
+    "3633550": {
+      "attacks": {
+        "avgCount": 60,
+        "avgMods": 2.0383333333333336,
+        "avgRespect": 2.976166666666668,
+        "count": 0,
+        "hitCount": 60,
+        "hitTypes": {
+          "Attacked": 59,
+          "Escape": 1
+        },
+        "totals": 178.57000000000008,
+        "userTag": "Bellaluna [3633550]"
+      },
+      "armory": {}
+    },
+    "2789643": {
+      "attacks": {
+        "avgCount": 30,
+        "avgMods": 2.619333333333333,
+        "avgRespect": 3.7063333333333333,
+        "count": 0,
+        "hitCount": 31,
+        "hitTypes": {
+          "Attacked": 26,
+          "Lost": 4
+        },
+        "totals": 111.19,
+        "userTag": "leoDvine [2789643]"
+      },
+      "armory": {}
+    },
+    "3686634": {
+      "attacks": {
+        "avgCount": 57,
+        "avgMods": 2.101754385964913,
+        "avgRespect": 3.1315789473684204,
+        "count": 0,
+        "hitCount": 57,
+        "hitTypes": {
+          "Attacked": 45,
+          "Lost": 6,
+          "Assist": 1,
+          "Mugged": 2,
+          "Hospitalized": 3
+        },
+        "totals": 178.49999999999997,
+        "userTag": "ARRODOX [3686634]"
+      },
+      "armory": {}
+    },
+    "1707230": {
+      "attacks": {
+        "avgCount": 66,
+        "avgMods": 2.382575757575758,
+        "avgRespect": 3.833333333333332,
+        "count": 0,
+        "hitCount": 66,
+        "hitTypes": {
+          "Lost": 2,
+          "Attacked": 64
+        },
+        "totals": 252.99999999999991,
+        "userTag": "Maquis [1707230]"
+      },
+      "armory": {}
+    },
+    "2104992": {
+      "attacks": {
+        "avgCount": 57,
+        "avgMods": 2.243508771929825,
+        "avgRespect": 3.416491228070174,
+        "count": 0,
+        "hitCount": 57,
+        "hitTypes": {
+          "Attacked": 52,
+          "Lost": 5
+        },
+        "totals": 194.73999999999992,
+        "userTag": "mialu000 [2104992]"
+      },
+      "armory": {}
+    },
+    "2747986": {
+      "attacks": {
+        "avgCount": 60,
+        "avgMods": 1.082499999999999,
+        "avgRespect": 1.4921666666666662,
+        "count": 0,
+        "hitCount": 61,
+        "hitTypes": {
+          "Attacked": 60
+        },
+        "totals": 89.52999999999997,
+        "userTag": "Maxwellll [2747986]"
+      },
+      "armory": {}
+    },
+    "3657653": {
+      "attacks": {
+        "avgCount": 62,
+        "avgMods": 2.7753225806451614,
+        "avgRespect": 4.3348387096774195,
+        "count": 0,
+        "hitCount": 62,
+        "hitTypes": {
+          "Attacked": 58,
+          "Lost": 4
+        },
+        "totals": 268.76,
+        "userTag": "OJpun [3657653]"
+      },
+      "armory": {}
+    },
+    "3475018": {
+      "attacks": {
+        "avgCount": 61,
+        "avgMods": 2.598524590163935,
+        "avgRespect": 4.002459016393442,
+        "count": 0,
+        "hitCount": 61,
+        "hitTypes": {
+          "Attacked": 56,
+          "Lost": 5
+        },
+        "totals": 244.14999999999998,
+        "userTag": "75cent [3475018]"
+      },
+      "armory": {}
+    },
+    "2831531": {
+      "attacks": {
+        "avgCount": 5,
+        "avgMods": 1.876,
+        "avgRespect": 2.818,
+        "count": 0,
+        "hitCount": 5,
+        "hitTypes": {
+          "Attacked": 5
+        },
+        "totals": 14.09,
+        "userTag": "4ngelic [2831531]"
+      },
+      "armory": {}
+    },
+    "3658395": {
+      "attacks": {
+        "avgCount": 62,
+        "avgMods": 1.950483870967742,
+        "avgRespect": 3.1103225806451604,
+        "count": 0,
+        "hitCount": 62,
+        "hitTypes": {
+          "Attacked": 59,
+          "Lost": 3
+        },
+        "totals": 192.83999999999995,
+        "userTag": "DonBaker [3658395]"
+      },
+      "armory": {}
+    },
+    "3593679": {
+      "attacks": {
+        "avgCount": 32,
+        "avgMods": 2.2090625,
+        "avgRespect": 3.23375,
+        "count": 0,
+        "hitCount": 32,
+        "hitTypes": {
+          "Attacked": 27,
+          "Escape": 1,
+          "Stalemate": 1,
+          "Lost": 3
+        },
+        "totals": 103.48,
+        "userTag": "Shelly_Lovegood [3593679]"
+      },
+      "armory": {}
+    },
+    "3646016": {
+      "attacks": {
+        "avgCount": 54,
+        "avgMods": 2.6166666666666667,
+        "avgRespect": 3.8270370370370377,
+        "count": 0,
+        "hitCount": 55,
+        "hitTypes": {
+          "Attacked": 52,
+          "Lost": 2
+        },
+        "totals": 206.66000000000003,
+        "userTag": "Kurikurikur [3646016]"
+      },
+      "armory": {}
+    },
+    "3666755": {
+      "attacks": {
+        "avgCount": 56,
+        "avgMods": 2.704107142857143,
+        "avgRespect": 4.063392857142856,
+        "count": 0,
+        "hitCount": 56,
+        "hitTypes": {
+          "Attacked": 56
+        },
+        "totals": 227.54999999999993,
+        "userTag": "HewhoHaHa [3666755]"
+      },
+      "armory": {}
+    },
+    "3760084": {
+      "attacks": {
+        "avgCount": 58,
+        "avgMods": 2.1218965517241384,
+        "avgRespect": 2.81551724137931,
+        "count": 0,
+        "hitCount": 59,
+        "hitTypes": {
+          "Attacked": 39,
+          "Mugged": 18,
+          "Lost": 1
+        },
+        "totals": 163.29999999999998,
+        "userTag": "DeNuke [3760084]"
+      },
+      "armory": {}
+    },
+    "3186581": {
+      "attacks": {
+        "avgCount": 53,
+        "avgMods": 1.1715094339622643,
+        "avgRespect": 1.8635849056603773,
+        "count": 0,
+        "hitCount": 53,
+        "hitTypes": {
+          "Attacked": 53
+        },
+        "totals": 98.77,
+        "userTag": "-Lemmings- [3186581]"
+      },
+      "armory": {}
+    },
+    "3701512": {
+      "attacks": {
+        "avgCount": 97,
+        "avgMods": 2.667422680412371,
+        "avgRespect": 4.365876288659795,
+        "count": 0,
+        "hitCount": 97,
+        "hitTypes": {
+          "Attacked": 95,
+          "Lost": 2
+        },
+        "totals": 423.4900000000001,
+        "userTag": "CrowTheRobot [3701512]"
+      },
+      "armory": {}
+    },
+    "3538936": {
+      "attacks": {
+        "avgCount": 58,
+        "avgMods": 2.778448275862069,
+        "avgRespect": 4.505689655172414,
+        "count": 0,
+        "hitCount": 58,
+        "hitTypes": {
+          "Attacked": 55,
+          "Lost": 2,
+          "Special": 1
+        },
+        "totals": 261.33000000000004,
+        "userTag": "red-it [3538936]"
+      },
+      "armory": {}
+    },
+    "3635425": {
+      "attacks": {
+        "avgCount": 55,
+        "avgMods": 1.6478181818181816,
+        "avgRespect": 2.687636363636363,
+        "count": 0,
+        "hitCount": 55,
+        "hitTypes": {
+          "Attacked": 53,
+          "Lost": 2
+        },
+        "totals": 147.81999999999996,
+        "userTag": "Shasta_McNasty [3635425]"
+      },
+      "armory": {}
+    },
+    "3677604": {
+      "attacks": {
+        "avgCount": 54,
+        "avgMods": 1.9205555555555558,
+        "avgRespect": 3.047222222222221,
+        "count": 0,
+        "hitCount": 54,
+        "hitTypes": {
+          "Attacked": 52,
+          "Lost": 2
+        },
+        "totals": 164.54999999999995,
+        "userTag": "Yugoslav45 [3677604]"
+      },
+      "armory": {}
+    },
+    "2885721": {
+      "attacks": {
+        "avgCount": 57,
+        "avgMods": 2.191052631578948,
+        "avgRespect": 3.7278947368421047,
+        "count": 0,
+        "hitCount": 57,
+        "hitTypes": {
+          "Attacked": 57
+        },
+        "totals": 212.48999999999998,
+        "userTag": "--KRATOS-- [2885721]"
+      },
+      "armory": {}
+    },
+    "3721360": {
+      "attacks": {
+        "avgCount": 47,
+        "avgMods": 1.9476595744680851,
+        "avgRespect": 2.868085106382979,
+        "count": 0,
+        "hitCount": 47,
+        "hitTypes": {
+          "Attacked": 45,
+          "Mugged": 1,
+          "Lost": 1
+        },
+        "totals": 134.8,
+        "userTag": "3721360"
+      },
+      "armory": {}
+    },
+    "2223480": {
+      "attacks": {
+        "avgCount": 85,
+        "avgMods": 2.1907058823529417,
+        "avgRespect": 4.167882352941177,
+        "count": 0,
+        "hitCount": 85,
+        "hitTypes": {
+          "Attacked": 83,
+          "Lost": 2
+        },
+        "totals": 354.2700000000001,
+        "userTag": "HadesGodz [2223480]"
+      },
+      "armory": {}
+    },
+    "3646427": {
+      "attacks": {
+        "avgCount": 54,
+        "avgMods": 2.66,
+        "avgRespect": 4.0542592592592595,
+        "count": 0,
+        "hitCount": 54,
+        "hitTypes": {
+          "Attacked": 52,
+          "Lost": 2
+        },
+        "totals": 218.93,
+        "userTag": "Nebss [3646427]"
+      },
+      "armory": {}
+    },
+    "3256680": {
+      "attacks": {
+        "avgCount": 54,
+        "avgMods": 2.261111111111111,
+        "avgRespect": 3.7088888888888873,
+        "count": 0,
+        "hitCount": 54,
+        "hitTypes": {
+          "Attacked": 53,
+          "Lost": 1
+        },
+        "totals": 200.27999999999992,
+        "userTag": "WolfYT [3256680]"
+      },
+      "armory": {}
+    },
+    "1990798": {
+      "attacks": {
+        "avgCount": 3,
+        "avgMods": 1.76,
+        "avgRespect": 2.1233333333333335,
+        "count": 0,
+        "hitCount": 3,
+        "hitTypes": {
+          "Mugged": 3
+        },
+        "totals": 6.37,
+        "userTag": "1990798"
+      },
+      "armory": {}
+    },
+    "2763996": {
+      "attacks": {
+        "avgCount": 54,
+        "avgMods": 1.5724074074074073,
+        "avgRespect": 2.587962962962963,
+        "count": 0,
+        "hitCount": 54,
+        "hitTypes": {
+          "Attacked": 51,
+          "Lost": 3
+        },
+        "totals": 139.75,
+        "userTag": "GOOOON [2763996]"
+      },
+      "armory": {}
+    },
+    "2299334": {
+      "attacks": {
+        "avgCount": 96,
+        "avgMods": 1.8614583333333339,
+        "avgRespect": 3.597812500000002,
+        "count": 0,
+        "hitCount": 96,
+        "hitTypes": {
+          "Attacked": 94,
+          "Lost": 2
+        },
+        "totals": 345.3900000000002,
+        "userTag": "Inkweaver [2299334]"
+      },
+      "armory": {}
+    },
+    "2397674": {
+      "attacks": {
+        "avgCount": 58,
+        "avgMods": 2.615,
+        "avgRespect": 4.771896551724137,
+        "count": 0,
+        "hitCount": 58,
+        "hitTypes": {
+          "Attacked": 57,
+          "Stalemate": 1
+        },
+        "totals": 276.77,
+        "userTag": "2397674"
+      },
+      "armory": {}
+    },
+    "3376166": {
+      "attacks": {
+        "avgCount": 1,
+        "avgMods": 3.0,
+        "avgRespect": 4.76,
+        "count": 0,
+        "hitCount": 1,
+        "hitTypes": {
+          "Hospitalized": 1
+        },
+        "totals": 4.76,
+        "userTag": "3376166"
+      },
+      "armory": {}
+    },
+    "2428355": {
+      "attacks": {
+        "avgCount": 53,
+        "avgMods": 1.195471698113208,
+        "avgRespect": 2.04811320754717,
+        "count": 0,
+        "hitCount": 53,
+        "hitTypes": {
+          "Attacked": 52,
+          "Timeout": 1
+        },
+        "totals": 108.55000000000001,
+        "userTag": "xDCrix [2428355]"
+      },
+      "armory": {}
+    },
+    "1991021": {
+      "attacks": {
+        "avgCount": 108,
+        "avgMods": 1.0214814814814817,
+        "avgRespect": 1.7044444444444442,
+        "count": 0,
+        "hitCount": 108,
+        "hitTypes": {
+          "Attacked": 103,
+          "Lost": 5
+        },
+        "totals": 184.07999999999998,
+        "userTag": "1991021"
+      },
+      "armory": {}
+    },
+    "3635443": {
+      "attacks": {
+        "avgCount": 14,
+        "avgMods": 2.1364285714285716,
+        "avgRespect": 2.93,
+        "count": 0,
+        "hitCount": 14,
+        "hitTypes": {
+          "Mugged": 8,
+          "Hospitalized": 5,
+          "Lost": 1
+        },
+        "totals": 41.02,
+        "userTag": "ToxicTitanN7 [3635443]"
+      },
+      "armory": {}
+    },
+    "3604620": {
+      "attacks": {
+        "avgCount": 42,
+        "avgMods": 1.4600000000000002,
+        "avgRespect": 2.1209523809523807,
+        "count": 0,
+        "hitCount": 42,
+        "hitTypes": {
+          "Mugged": 21,
+          "Lost": 2,
+          "Attacked": 19
+        },
+        "totals": 89.08,
+        "userTag": "Buzzkill66 [3604620]"
+      },
+      "armory": {}
+    },
+    "3613075": {
+      "attacks": {
+        "avgCount": 11,
+        "avgMods": 1.2663636363636366,
+        "avgRespect": 1.8090909090909093,
+        "count": 0,
+        "hitCount": 11,
+        "hitTypes": {
+          "Lost": 1,
+          "Mugged": 4,
+          "Hospitalized": 6
+        },
+        "totals": 19.900000000000002,
+        "userTag": "crzycr33d [3613075]"
+      },
+      "armory": {}
+    },
+    "3816569": {
+      "attacks": {
+        "avgCount": 10,
+        "avgMods": 1.7689999999999997,
+        "avgRespect": 2.652,
+        "count": 0,
+        "hitCount": 10,
+        "hitTypes": {
+          "Attacked": 9,
+          "Mugged": 1
+        },
+        "totals": 26.520000000000003,
+        "userTag": "MindSweep009 [3816569]"
+      },
+      "armory": {}
+    },
+    "2219053": {
+      "attacks": {
+        "avgCount": 30,
+        "avgMods": 1.0706666666666667,
+        "avgRespect": 2.261666666666667,
+        "count": 0,
+        "hitCount": 30,
+        "hitTypes": {
+          "Attacked": 25,
+          "Mugged": 4,
+          "Lost": 1
+        },
+        "totals": 67.85000000000001,
+        "userTag": "Noumosh [2219053]"
+      },
+      "armory": {}
+    },
+    "2838269": {
+      "attacks": {
+        "avgCount": 63,
+        "avgMods": 2.8223809523809518,
+        "avgRespect": 6.0928571428571425,
+        "count": 0,
+        "hitCount": 63,
+        "hitTypes": {
+          "Attacked": 59,
+          "Lost": 3,
+          "Stalemate": 1
+        },
+        "totals": 383.84999999999997,
+        "userTag": "Knightnight1514 [2838269]"
+      },
+      "armory": {}
+    },
+    "3050178": {
+      "attacks": {
+        "avgCount": 52,
+        "avgMods": 1.7026923076923075,
+        "avgRespect": 2.959807692307692,
+        "count": 0,
+        "hitCount": 52,
+        "hitTypes": {
+          "Attacked": 50,
+          "Lost": 2
+        },
+        "totals": 153.91,
+        "userTag": "squidgybum [3050178]"
+      },
+      "armory": {}
+    },
+    "3559949": {
+      "attacks": {
+        "avgCount": 10,
+        "avgMods": 1.0,
+        "avgRespect": 0.0,
+        "count": 0,
+        "hitCount": 10,
+        "hitTypes": {
+          "Hospitalized": 2,
+          "Mugged": 5,
+          "Attacked": 1,
+          "Lost": 1,
+          "Timeout": 1
+        },
+        "totals": 0.0,
+        "userTag": "3559949"
+      },
+      "armory": {}
+    },
+    "3443002": {
+      "attacks": {
+        "avgCount": 13,
+        "avgMods": 2.120769230769231,
+        "avgRespect": 3.5007692307692304,
+        "count": 0,
+        "hitCount": 13,
+        "hitTypes": {
+          "Attacked": 12,
+          "Lost": 1
+        },
+        "totals": 45.51,
+        "userTag": "3443002"
+      },
+      "armory": {}
+    },
+    "2436362": {
+      "attacks": {
+        "avgCount": 4,
+        "avgMods": 2.9975,
+        "avgRespect": 5.0825,
+        "count": 0,
+        "hitCount": 4,
+        "hitTypes": {
+          "Attacked": 4
+        },
+        "totals": 20.33,
+        "userTag": "2436362"
+      },
+      "armory": {}
+    },
+    "2757057": {
+      "attacks": {
+        "avgCount": 50,
+        "avgMods": 2.3174,
+        "avgRespect": 4.174599999999999,
+        "count": 0,
+        "hitCount": 50,
+        "hitTypes": {
+          "Attacked": 47,
+          "Lost": 2,
+          "Special": 1
+        },
+        "totals": 208.72999999999996,
+        "userTag": "Illusive_ [2757057]"
+      },
+      "armory": {}
+    },
+    "3201909": {
+      "attacks": {
+        "avgCount": 1,
+        "avgMods": 2.29,
+        "avgRespect": 4.03,
+        "count": 0,
+        "hitCount": 1,
+        "hitTypes": {
+          "Attacked": 1
+        },
+        "totals": 4.03,
+        "userTag": "3201909"
+      },
+      "armory": {}
+    },
+    "3554007": {
+      "attacks": {
+        "avgCount": 18,
+        "avgMods": 1.8816666666666666,
+        "avgRespect": 2.723888888888889,
+        "count": 0,
+        "hitCount": 18,
+        "hitTypes": {
+          "Attacked": 12,
+          "Lost": 2,
+          "Mugged": 4
+        },
+        "totals": 49.03,
+        "userTag": "3554007"
+      },
+      "armory": {}
+    },
+    "2653216": {
+      "attacks": {
+        "avgCount": 51,
+        "avgMods": 1.6517647058823524,
+        "avgRespect": 2.67156862745098,
+        "count": 0,
+        "hitCount": 51,
+        "hitTypes": {
+          "Lost": 6,
+          "Attacked": 45
+        },
+        "totals": 136.24999999999997,
+        "userTag": "2653216"
+      },
+      "armory": {}
+    },
+    "3605360": {
+      "attacks": {
+        "avgCount": 51,
+        "avgMods": 1.6898039215686274,
+        "avgRespect": 2.533333333333334,
+        "count": 0,
+        "hitCount": 51,
+        "hitTypes": {
+          "Attacked": 39,
+          "Mugged": 7,
+          "Lost": 4,
+          "Stalemate": 1
+        },
+        "totals": 129.20000000000005,
+        "userTag": "FatherFesto [3605360]"
+      },
+      "armory": {}
+    },
+    "3433050": {
+      "attacks": {
+        "avgCount": 51,
+        "avgMods": 1.7125490196078434,
+        "avgRespect": 3.0690196078431375,
+        "count": 0,
+        "hitCount": 51,
+        "hitTypes": {
+          "Attacked": 51
+        },
+        "totals": 156.52,
+        "userTag": "BeezMeech [3433050]"
+      },
+      "armory": {}
+    },
+    "2746246": {
+      "attacks": {
+        "avgCount": 66,
+        "avgMods": 1.3583333333333336,
+        "avgRespect": 2.4836363636363625,
+        "count": 0,
+        "hitCount": 66,
+        "hitTypes": {
+          "Attacked": 65,
+          "Lost": 1
+        },
+        "totals": 163.91999999999993,
+        "userTag": "RHowzy [2746246]"
+      },
+      "armory": {}
+    },
+    "2769914": {
+      "attacks": {
+        "avgCount": 24,
+        "avgMods": 2.9166666666666665,
+        "avgRespect": 5.334166666666666,
+        "count": 0,
+        "hitCount": 24,
+        "hitTypes": {
+          "Attacked": 23,
+          "Lost": 1
+        },
+        "totals": 128.01999999999998,
+        "userTag": "BetaTester704 [2769914]"
+      },
+      "armory": {}
+    },
+    "2530140": {
+      "attacks": {
+        "avgCount": 6,
+        "avgMods": 2.0233333333333334,
+        "avgRespect": 3.7916666666666665,
+        "count": 0,
+        "hitCount": 6,
+        "hitTypes": {
+          "Mugged": 1,
+          "Hospitalized": 1,
+          "Attacked": 4
+        },
+        "totals": 22.75,
+        "userTag": "2530140"
+      },
+      "armory": {}
+    },
+    "3507556": {
+      "attacks": {
+        "avgCount": 12,
+        "avgMods": 2.0033333333333334,
+        "avgRespect": 3.3125,
+        "count": 0,
+        "hitCount": 12,
+        "hitTypes": {
+          "Attacked": 10,
+          "Hospitalized": 1,
+          "Escape": 1
+        },
+        "totals": 39.75,
+        "userTag": "Missmoon8 [3507556]"
+      },
+      "armory": {}
+    }
+  },
+  "generatedAtIST": "2025-08-04 16:15:44 IST"
+}

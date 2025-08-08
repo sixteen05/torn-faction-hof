@@ -17,9 +17,8 @@ def fetch_full_attacks(from_ts: str, to_ts: str) -> List[Dict[str, Any]]:
     attacks = []
     next_from = from_ts
     while True:
-        print(f"Fetching attacks from {next_from} to {to_ts}")
         r = make_api_call(
-            f"/v2/faction/attacksfull?limit={PAGE_SIZE}&sort=ASC&from={next_from}&to={to_ts}&key={KEY}"
+            f"/v2/faction/attacksfull?limit={PAGE_SIZE}&sort=ASC&from={next_from}&to={to_ts}"
         )
         page_attacks = r.get("attacks", [])
         print(f"Fetched {len(page_attacks)} attacks")
@@ -32,13 +31,31 @@ def fetch_full_attacks(from_ts: str, to_ts: str) -> List[Dict[str, Any]]:
     return attacks
 
 
+def fetch_attacks_for_chain(chain_start, chain_end):
+    attacks = []
+    next_from = chain_start
+    while True:
+        r = make_api_call(
+            f"/v2/faction/attacks?limit={PAGE_SIZE}&sort=ASC&from={next_from}&to={chain_end}"
+        )
+        page_attacks = r.get("attacks", [])
+        print(f"Fetched {len(page_attacks)} attacks")
+        attacks.extend(page_attacks)
+        if page_attacks:
+            next_from = str(int(page_attacks[-1]["ended"]) + 1)
+        else:
+            break
+
+    print(f"Fetched {len(attacks)} attacks for chain from {chain_start} to {chain_end}")
+    return attacks
+
+
 def fetch_armory_news(from_ts: str, to_ts: str) -> list:
     news = []
     next_from = from_ts
     while True:
-        print(f"Fetching armory news from {next_from} to {to_ts}")
         r = make_api_call(
-            f"/v2/faction/news?striptags=false&limit={PAGE_SIZE}&sort=ASC&to={to_ts}&from={next_from}&cat=armoryAction&key={KEY}"
+            f"/v2/faction/news?striptags=false&limit={PAGE_SIZE}&sort=ASC&to={to_ts}&from={next_from}&cat=armoryAction"
         )
         page_news = r.get("news", [])
         print(f"Fetched {len(page_news)} news")
@@ -57,7 +74,7 @@ def fetch_ranked_war_news(from_ts: str) -> list:
     while True:
         print(f"Fetching ranked war news from {next_from}")
         r = make_api_call(
-            f"/v2/faction/news?striptags=false&limit=100&sort=ASC&from={next_from}&cat=rankedWar&key={KEY}"
+            f"/v2/faction/news?striptags=false&limit=100&sort=ASC&from={next_from}&cat=rankedWar"
         )
         page_news = r.get("news", [])
         print(f"Fetched {len(page_news)} war news")
@@ -76,7 +93,7 @@ def fetch_faction_chains(from_ts: str) -> list:
     while True:
         print(f"Fetching faction chains from {next_from}")
         r = make_api_call(
-            f"/v2/faction/chains?from={next_from}&sort=ASC&limit={PAGE_SIZE}&key={KEY}"
+            f"/v2/faction/chains?from={next_from}&sort=ASC&limit={PAGE_SIZE}"
         )
         page_chains = r.get("chains", [])
         print(f"Fetched {len(page_chains)} chains")
@@ -94,5 +111,6 @@ def fetch_faction_chains(from_ts: str) -> list:
             next_from = str(int(page_chains[-1]["end"]) + 1)
         else:
             break
+
     print(f"Total chains fetched: {len(chains)}")
     return chains

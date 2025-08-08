@@ -1,0 +1,55 @@
+{
+  "chainId": 47766403,
+  "chainStart": 1746993327,
+  "chainEnd": 1746993928,
+  "isWarChain": false,
+  "memberActions": {
+    "3540660": {
+      "attacks": {
+        "avgCount": 14,
+        "avgMods": 1.8842857142857141,
+        "avgRespect": 1.967142857142857,
+        "count": 0,
+        "hitCount": 15,
+        "hitTypes": {
+          "Attacked": 12,
+          "Lost": 2
+        },
+        "totals": 27.54,
+        "userTag": "3540660"
+      },
+      "armory": {}
+    },
+    "3735289": {
+      "attacks": {
+        "avgCount": 1,
+        "avgMods": 3.0,
+        "avgRespect": 3.12,
+        "count": 0,
+        "hitCount": 1,
+        "hitTypes": {
+          "Attacked": 1
+        },
+        "totals": 3.12,
+        "userTag": "3735289"
+      },
+      "armory": {}
+    },
+    "3657653": {
+      "attacks": {
+        "avgCount": 1,
+        "avgMods": 3.0,
+        "avgRespect": 3.24,
+        "count": 0,
+        "hitCount": 1,
+        "hitTypes": {
+          "Hospitalized": 1
+        },
+        "totals": 3.24,
+        "userTag": "OJpun [3657653]"
+      },
+      "armory": {}
+    }
+  },
+  "generatedAtIST": "2025-08-04 16:13:13 IST"
+}

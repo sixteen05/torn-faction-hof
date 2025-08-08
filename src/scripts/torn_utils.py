@@ -17,6 +17,7 @@ PAGE_SIZE = 1000
 ASSETS_DIR = "public/"
 ARMORY_FILE_NAME = "armoryNews.json"
 ATTACKS_FILE_NAME = "attacks.json"
+BONUS_HITS = [10, 25, 50, 100, 250, 500, 1000, 2500, 5000, 10000, 25000, 50000, 100000]
 
 
 # --- Generic Utils ---
@@ -26,20 +27,25 @@ def make_api_call(relative_url: str) -> Any:
         "accept": "application/json",
         "accept-language": "en-US,en;q=0.9",
         "referer": "https://www.torn.com/",
+        "Authorization": f"ApiKey {KEY}",
     }
     while True:
-        print(f"API GET: {url}")
-        resp = requests.get(url, headers=headers)
         try:
+            print(f"API GET: {url}")
+            resp = requests.get(url, headers=headers)
             data = resp.json()
         except Exception as e:
             print(f"Error decoding JSON: {e}")
             print(f"Raw response: {resp.text}")
             raise
+
         if data.get("error", {}).get("code") == 5:
             print("Throttled, waiting for 10sec")
             time.sleep(10)
             continue
+        elif data.get("error"):
+            raise Exception(f"API Error: {json.dumps(data, indent=2)}")
+
         return data
 
 

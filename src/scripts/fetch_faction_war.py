@@ -31,10 +31,12 @@ def fetch_and_parse_attacks(
 ):
     if member_tag_map is None:
         member_tag_map, _ = fetch_faction_members()
+
     attacks = fetch_full_attacks(from_ts, to_ts)
     print(f"Aggregating attacks for {len(attacks)} records...")
     if aggregated_counts is None:
         aggregated_counts = {}
+
     for _, each_attack in enumerate(attacks):
         parsed = parse_full_attack(each_attack, target_faction_id, member_tag_map)
         increment_war_counters_per_user(aggregated_counts, parsed["userId"], parsed)

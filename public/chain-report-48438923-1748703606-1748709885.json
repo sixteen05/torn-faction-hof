@@ -1,0 +1,349 @@
+{
+  "chainId": 48438923,
+  "chainStart": 1748703606,
+  "chainEnd": 1748709885,
+  "isWarChain": true,
+  "memberActions": {
+    "3658395": {
+      "attacks": {
+        "avgCount": 46,
+        "avgMods": 2.14804347826087,
+        "avgRespect": 2.6443478260869564,
+        "count": 0,
+        "hitCount": 46,
+        "hitTypes": {
+          "Attacked": 45,
+          "Mugged": 1
+        },
+        "totals": 121.63999999999999,
+        "userTag": "DonBaker [3658395]"
+      },
+      "armory": {}
+    },
+    "3671051": {
+      "attacks": {
+        "avgCount": 25,
+        "avgMods": 2.5652,
+        "avgRespect": 3.5471999999999997,
+        "count": 0,
+        "hitCount": 25,
+        "hitTypes": {
+          "Attacked": 25
+        },
+        "totals": 88.67999999999999,
+        "userTag": "pooq [3671051]"
+      },
+      "armory": {}
+    },
+    "2348502": {
+      "attacks": {
+        "avgCount": 12,
+        "avgMods": 1.6691666666666665,
+        "avgRespect": 6.353333333333333,
+        "count": 0,
+        "hitCount": 15,
+        "hitTypes": {
+          "Attacked": 9,
+          "Hospitalized": 3
+        },
+        "totals": 76.24,
+        "userTag": "DragonArmy [2348502]"
+      },
+      "armory": {}
+    },
+    "3593679": {
+      "attacks": {
+        "avgCount": 9,
+        "avgMods": 2.0477777777777777,
+        "avgRespect": 2.045555555555555,
+        "count": 0,
+        "hitCount": 9,
+        "hitTypes": {
+          "Attacked": 6,
+          "Lost": 2,
+          "Mugged": 1
+        },
+        "totals": 18.409999999999997,
+        "userTag": "Shelly_Lovegood [3593679]"
+      },
+      "armory": {}
+    },
+    "3701512": {
+      "attacks": {
+        "avgCount": 43,
+        "avgMods": 2.706976744186046,
+        "avgRespect": 3.5732558139534887,
+        "count": 0,
+        "hitCount": 43,
+        "hitTypes": {
+          "Attacked": 37,
+          "Lost": 4,
+          "Interrupted": 2
+        },
+        "totals": 153.65,
+        "userTag": "CrowTheRobot [3701512]"
+      },
+      "armory": {}
+    },
+    "3437431": {
+      "attacks": {
+        "avgCount": 8,
+        "avgMods": 2.1149999999999998,
+        "avgRespect": 2.51875,
+        "count": 0,
+        "hitCount": 8,
+        "hitTypes": {
+          "Attacked": 6,
+          "Lost": 2
+        },
+        "totals": 20.15,
+        "userTag": "Vincenty69 [3437431]"
+      },
+      "armory": {}
+    },
+    "2831531": {
+      "attacks": {
+        "avgCount": 23,
+        "avgMods": 1.7465217391304348,
+        "avgRespect": 2.367826086956522,
+        "count": 0,
+        "hitCount": 24,
+        "hitTypes": {
+          "Attacked": 22,
+          "Interrupted": 1
+        },
+        "totals": 54.46,
+        "userTag": "4ngelic [2831531]"
+      },
+      "armory": {}
+    },
+    "2757057": {
+      "attacks": {
+        "avgCount": 1,
+        "avgMods": 1.0,
+        "avgRespect": 0.0,
+        "count": 0,
+        "hitCount": 1,
+        "hitTypes": {
+          "Lost": 1
+        },
+        "totals": 0.0,
+        "userTag": "Illusive_ [2757057]"
+      },
+      "armory": {}
+    },
+    "3538936": {
+      "attacks": {
+        "avgCount": 26,
+        "avgMods": 2.4269230769230763,
+        "avgRespect": 3.4788461538461544,
+        "count": 0,
+        "hitCount": 26,
+        "hitTypes": {
+          "Attacked": 22,
+          "Lost": 3,
+          "Mugged": 1
+        },
+        "totals": 90.45000000000002,
+        "userTag": "red-it [3538936]"
+      },
+      "armory": {}
+    },
+    "2746246": {
+      "attacks": {
+        "avgCount": 16,
+        "avgMods": 1.411875,
+        "avgRespect": 4.396875,
+        "count": 0,
+        "hitCount": 17,
+        "hitTypes": {
+          "Attacked": 12,
+          "Lost": 1,
+          "Hospitalized": 2,
+          "Mugged": 1
+        },
+        "totals": 70.35,
+        "userTag": "RHowzy [2746246]"
+      },
+      "armory": {}
+    },
+    "3608198": {
+      "attacks": {
+        "avgCount": 15,
+        "avgMods": 1.8166666666666669,
+        "avgRespect": 2.2893333333333334,
+        "count": 0,
+        "hitCount": 15,
+        "hitTypes": {
+          "Attacked": 8,
+          "Assist": 1,
+          "Lost": 3,
+          "Mugged": 3
+        },
+        "totals": 34.34,
+        "userTag": "3608198"
+      },
+      "armory": {}
+    },
+    "3635443": {
+      "attacks": {
+        "avgCount": 11,
+        "avgMods": 2.014545454545455,
+        "avgRespect": 1.9554545454545453,
+        "count": 0,
+        "hitCount": 11,
+        "hitTypes": {
+          "Lost": 2,
+          "Mugged": 7,
+          "Hospitalized": 2
+        },
+        "totals": 21.509999999999998,
+        "userTag": "ToxicTitanN7 [3635443]"
+      },
+      "armory": {}
+    },
+    "3666755": {
+      "attacks": {
+        "avgCount": 7,
+        "avgMods": 2.6371428571428575,
+        "avgRespect": 3.4314285714285715,
+        "count": 0,
+        "hitCount": 7,
+        "hitTypes": {
+          "Attacked": 7
+        },
+        "totals": 24.02,
+        "userTag": "HewhoHaHa [3666755]"
+      },
+      "armory": {}
+    },
+    "2838269": {
+      "attacks": {
+        "avgCount": 7,
+        "avgMods": 2.4285714285714284,
+        "avgRespect": 3.5800000000000005,
+        "count": 0,
+        "hitCount": 7,
+        "hitTypes": {
+          "Lost": 2,
+          "Attacked": 5
+        },
+        "totals": 25.060000000000002,
+        "userTag": "Knightnight1514 [2838269]"
+      },
+      "armory": {}
+    },
+    "3657653": {
+      "attacks": {
+        "avgCount": 14,
+        "avgMods": 2.6678571428571436,
+        "avgRespect": 3.7521428571428572,
+        "count": 0,
+        "hitCount": 14,
+        "hitTypes": {
+          "Attacked": 13,
+          "Interrupted": 1
+        },
+        "totals": 52.53,
+        "userTag": "OJpun [3657653]"
+      },
+      "armory": {}
+    },
+    "2397674": {
+      "attacks": {
+        "avgCount": 2,
+        "avgMods": 2.615,
+        "avgRespect": 4.029999999999999,
+        "count": 0,
+        "hitCount": 2,
+        "hitTypes": {
+          "Attacked": 2
+        },
+        "totals": 8.059999999999999,
+        "userTag": "2397674"
+      },
+      "armory": {}
+    },
+    "3605360": {
+      "attacks": {
+        "avgCount": 8,
+        "avgMods": 1.9874999999999998,
+        "avgRespect": 2.01,
+        "count": 0,
+        "hitCount": 8,
+        "hitTypes": {
+          "Assist": 1,
+          "Mugged": 6,
+          "Attacked": 1
+        },
+        "totals": 16.08,
+        "userTag": "FatherFesto [3605360]"
+      },
+      "armory": {}
+    },
+    "3636270": {
+      "attacks": {
+        "avgCount": 5,
+        "avgMods": 2.982,
+        "avgRespect": 3.374,
+        "count": 0,
+        "hitCount": 5,
+        "hitTypes": {
+          "Mugged": 4,
+          "Attacked": 1
+        },
+        "totals": 16.87,
+        "userTag": "3636270"
+      },
+      "armory": {}
+    },
+    "3721360": {
+      "attacks": {
+        "avgCount": 4,
+        "avgMods": 1.5825,
+        "avgRespect": 1.8275000000000001,
+        "count": 0,
+        "hitCount": 4,
+        "hitTypes": {
+          "Attacked": 3,
+          "Interrupted": 1
+        },
+        "totals": 7.3100000000000005,
+        "userTag": "3721360"
+      },
+      "armory": {}
+    },
+    "2299334": {
+      "attacks": {
+        "avgCount": 1,
+        "avgMods": 1.0,
+        "avgRespect": 0.0,
+        "count": 0,
+        "hitCount": 1,
+        "hitTypes": {
+          "Interrupted": 1
+        },
+        "totals": 0.0,
+        "userTag": "Inkweaver [2299334]"
+      },
+      "armory": {}
+    },
+    "2223480": {
+      "attacks": {
+        "avgCount": 7,
+        "avgMods": 1.764285714285714,
+        "avgRespect": 5.648571428571429,
+        "count": 0,
+        "hitCount": 7,
+        "hitTypes": {
+          "Attacked": 6,
+          "Stalemate": 1
+        },
+        "totals": 39.54,
+        "userTag": "HadesGodz [2223480]"
+      },
+      "armory": {}
+    }
+  },
+  "generatedAtIST": "2025-08-04 16:14:09 IST"
+}
